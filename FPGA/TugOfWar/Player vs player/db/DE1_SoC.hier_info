@@ -1,0 +1,285 @@
+|lab6
+CLOCK_50 => CLOCK_50.IN1
+HEX0[0] <= game:play.HEX
+HEX0[1] <= game:play.HEX
+HEX0[2] <= game:play.HEX
+HEX0[3] <= game:play.HEX
+HEX0[4] <= game:play.HEX
+HEX0[5] <= game:play.HEX
+HEX0[6] <= game:play.HEX
+HEX1[0] <= <GND>
+HEX1[1] <= <GND>
+HEX1[2] <= <GND>
+HEX1[3] <= <GND>
+HEX1[4] <= <GND>
+HEX1[5] <= <GND>
+HEX1[6] <= <GND>
+HEX2[0] <= <GND>
+HEX2[1] <= <GND>
+HEX2[2] <= <GND>
+HEX2[3] <= <GND>
+HEX2[4] <= <GND>
+HEX2[5] <= <GND>
+HEX2[6] <= <GND>
+HEX3[0] <= <GND>
+HEX3[1] <= <GND>
+HEX3[2] <= <GND>
+HEX3[3] <= <GND>
+HEX3[4] <= <GND>
+HEX3[5] <= <GND>
+HEX3[6] <= <GND>
+HEX4[0] <= <GND>
+HEX4[1] <= <GND>
+HEX4[2] <= <GND>
+HEX4[3] <= <GND>
+HEX4[4] <= <GND>
+HEX4[5] <= <GND>
+HEX4[6] <= <GND>
+HEX5[0] <= <GND>
+HEX5[1] <= <GND>
+HEX5[2] <= <GND>
+HEX5[3] <= <GND>
+HEX5[4] <= <GND>
+HEX5[5] <= <GND>
+HEX5[6] <= <GND>
+LEDR[0] <= <GND>
+LEDR[1] <= game:play.LED
+LEDR[2] <= game:play.LED
+LEDR[3] <= game:play.LED
+LEDR[4] <= game:play.LED
+LEDR[5] <= game:play.LED
+LEDR[6] <= game:play.LED
+LEDR[7] <= game:play.LED
+LEDR[8] <= game:play.LED
+LEDR[9] <= game:play.LED
+KEY[0] => _.IN1
+KEY[1] => _.IN1
+KEY[2] => _.IN1
+KEY[3] => _.IN1
+SW[0] => ~NO_FANOUT~
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => SW[9].IN1
+
+
+|lab6|game:play
+clk => clk.IN4
+key[0] => key[0].IN1
+key[1] => ~NO_FANOUT~
+key[2] => ~NO_FANOUT~
+key[3] => key[3].IN1
+reset => reset.IN4
+LED[1] <= LED[1].DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= lights:all.led
+LED[3] <= lights:all.led
+LED[4] <= lights:all.led
+LED[5] <= lights:all.led
+LED[6] <= lights:all.led
+LED[7] <= lights:all.led
+LED[8] <= lights:all.led
+LED[9] <= LED[9].DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= victory:win.disp
+HEX[1] <= victory:win.disp
+HEX[2] <= victory:win.disp
+HEX[3] <= victory:win.disp
+HEX[4] <= victory:win.disp
+HEX[5] <= victory:win.disp
+HEX[6] <= victory:win.disp
+
+
+|lab6|game:play|keys:b1
+clk => clk.IN2
+reset => reset.IN2
+key => key.IN1
+keyOut <= pulse:p.out
+
+
+|lab6|game:play|keys:b1|synch:s
+clk => out~reg0.CLK
+clk => mid.CLK
+reset => mid.OUTPUTSELECT
+reset => out.OUTPUTSELECT
+in => mid.DATAA
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|keys:b1|pulse:p
+clk => ps.CLK
+reset => ps.OUTPUTSELECT
+in => out.IN1
+in => ps.DATAA
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|keys:b2
+clk => clk.IN2
+reset => reset.IN2
+key => key.IN1
+keyOut <= pulse:p.out
+
+
+|lab6|game:play|keys:b2|synch:s
+clk => out~reg0.CLK
+clk => mid.CLK
+reset => mid.OUTPUTSELECT
+reset => out.OUTPUTSELECT
+in => mid.DATAA
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|keys:b2|pulse:p
+clk => ps.CLK
+reset => ps.OUTPUTSELECT
+in => out.IN1
+in => ps.DATAA
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all
+clk => clk.IN9
+reset => reset.IN9
+L => L.IN9
+R => R.IN9
+led[1] <= led[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led[2].DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led[3].DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= led[4].DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= led[5].DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= led[6].DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= led[7].DB_MAX_OUTPUT_PORT_TYPE
+led[8] <= led[8].DB_MAX_OUTPUT_PORT_TYPE
+led[9] <= led[9].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n1
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n2
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n3
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n4
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|centerLight:n5
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n6
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n7
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n8
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n9
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|victory:win
+clk => PS~1.DATAIN
+reset => PS.OUTPUTSELECT
+reset => PS.OUTPUTSELECT
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+R => always0.IN0
+NL => always0.IN1
+NR => always0.IN1
+disp[0] <= disp[0].DB_MAX_OUTPUT_PORT_TYPE
+disp[1] <= disp[1].DB_MAX_OUTPUT_PORT_TYPE
+disp[2] <= disp[2].DB_MAX_OUTPUT_PORT_TYPE
+disp[3] <= disp[0].DB_MAX_OUTPUT_PORT_TYPE
+disp[4] <= disp[0].DB_MAX_OUTPUT_PORT_TYPE
+disp[5] <= <VCC>
+disp[6] <= disp[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

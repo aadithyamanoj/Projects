@@ -1,0 +1,293 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do grunlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:37:59 on Nov 21,2024
+# vlog -reportprogress 300 ./centerLight.sv 
+# -- Compiling module centerLight
+# 
+# Top level modules:
+# 	centerLight
+# End time: 16:37:59 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:37:59 on Nov 21,2024
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 16:37:59 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:37:59 on Nov 21,2024
+# vlog -reportprogress 300 ./input.sv 
+# -- Compiling module keys
+# 
+# Top level modules:
+# 	keys
+# End time: 16:37:59 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:37:59 on Nov 21,2024
+# vlog -reportprogress 300 ./input_tb.sv 
+# -- Compiling module input_tb
+# 
+# Top level modules:
+# 	input_tb
+# End time: 16:37:59 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:00 on Nov 21,2024
+# vlog -reportprogress 300 ./lab6.sv 
+# -- Compiling module lab6
+# 
+# Top level modules:
+# 	lab6
+# End time: 16:38:00 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:00 on Nov 21,2024
+# vlog -reportprogress 300 ./lights.sv 
+# -- Compiling module lights
+# 
+# Top level modules:
+# 	lights
+# End time: 16:38:00 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:00 on Nov 21,2024
+# vlog -reportprogress 300 ./normalLight.sv 
+# -- Compiling module normalLight
+# 
+# Top level modules:
+# 	normalLight
+# End time: 16:38:00 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:00 on Nov 21,2024
+# vlog -reportprogress 300 ./pulse.sv 
+# -- Compiling module pulse
+# 
+# Top level modules:
+# 	pulse
+# End time: 16:38:00 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:00 on Nov 21,2024
+# vlog -reportprogress 300 ./synch.sv 
+# -- Compiling module synch
+# 
+# Top level modules:
+# 	synch
+# End time: 16:38:00 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:00 on Nov 21,2024
+# vlog -reportprogress 300 ./victory.sv 
+# -- Compiling module victory
+# 
+# Top level modules:
+# 	victory
+# End time: 16:38:00 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:00 on Nov 21,2024
+# vlog -reportprogress 300 ./game.sv 
+# -- Compiling module game
+# 
+# Top level modules:
+# 	game
+# End time: 16:38:00 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:00 on Nov 21,2024
+# vlog -reportprogress 300 ./game_tb.sv 
+# -- Compiling module game_tb
+# 
+# Top level modules:
+# 	game_tb
+# End time: 16:38:00 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:00 on Nov 21,2024
+# vlog -reportprogress 300 ./normalLight_tb.sv 
+# -- Compiling module normalLight_tb
+# 
+# Top level modules:
+# 	normalLight_tb
+# End time: 16:38:00 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:00 on Nov 21,2024
+# vlog -reportprogress 300 ./centerLight_tb.sv 
+# -- Compiling module centerLight_tb
+# 
+# Top level modules:
+# 	centerLight_tb
+# End time: 16:38:00 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:00 on Nov 21,2024
+# vlog -reportprogress 300 ./victory_tb.sv 
+# End time: 16:38:00 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:00 on Nov 21,2024
+# vlog -reportprogress 300 ./lights_tb.sv 
+# -- Compiling module lights_tb
+# 
+# Top level modules:
+# 	lights_tb
+# End time: 16:38:01 on Nov 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:01 on Nov 21,2024
+# vlog -reportprogress 300 ./adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 16:38:01 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:01 on Nov 21,2024
+# vlog -reportprogress 300 ./adder_tb.sv 
+# -- Compiling module adder_tb
+# 
+# Top level modules:
+# 	adder_tb
+# End time: 16:38:01 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:01 on Nov 21,2024
+# vlog -reportprogress 300 ./adder3Bit.sv 
+# -- Compiling module adder3Bit
+# 
+# Top level modules:
+# 	adder3Bit
+# End time: 16:38:01 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:01 on Nov 21,2024
+# vlog -reportprogress 300 ./adder3Bit_tb.sv 
+# -- Compiling module adder3Bit_tb
+# 
+# Top level modules:
+# 	adder3Bit_tb
+# End time: 16:38:01 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:01 on Nov 21,2024
+# vlog -reportprogress 300 ./adder9Bit.sv 
+# -- Compiling module adder9Bit
+# 
+# Top level modules:
+# 	adder9Bit
+# End time: 16:38:01 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:01 on Nov 21,2024
+# vlog -reportprogress 300 ./adder9Bit_tb.sv 
+# -- Compiling module adder9Bit_tb
+# 
+# Top level modules:
+# 	adder9Bit_tb
+# End time: 16:38:01 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:01 on Nov 21,2024
+# vlog -reportprogress 300 ./cyberPlayer.sv 
+# -- Compiling module cyberPlayer
+# 
+# Top level modules:
+# 	cyberPlayer
+# End time: 16:38:01 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:01 on Nov 21,2024
+# vlog -reportprogress 300 ./cyberPlayer_tb.sv 
+# -- Compiling module cyberPlayer_tb
+# 
+# Top level modules:
+# 	cyberPlayer_tb
+# End time: 16:38:01 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:01 on Nov 21,2024
+# vlog -reportprogress 300 ./counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 16:38:01 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:01 on Nov 21,2024
+# vlog -reportprogress 300 ./counter_tb.sv 
+# -- Compiling module counter_tb
+# 
+# Top level modules:
+# 	counter_tb
+# End time: 16:38:01 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:01 on Nov 21,2024
+# vlog -reportprogress 300 ./disp.sv 
+# -- Compiling module disp
+# 
+# Top level modules:
+# 	disp
+# End time: 16:38:01 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:01 on Nov 21,2024
+# vlog -reportprogress 300 ./LFSR.sv 
+# -- Compiling module LFSR
+# 
+# Top level modules:
+# 	LFSR
+# End time: 16:38:02 on Nov 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:38:02 on Nov 21,2024
+# vlog -reportprogress 300 ./LFSR_tb.sv 
+# -- Compiling module LFSR_tb
+# 
+# Top level modules:
+# 	LFSR_tb
+# End time: 16:38:02 on Nov 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work game_tb 
+# Start time: 16:38:02 on Nov 21,2024
+# Loading sv_std.std
+# Loading work.game_tb
+# Loading work.game
+# Loading work.cyberPlayer
+# Loading work.LFSR
+# Loading work.adder9Bit
+# Loading work.adder
+# Loading work.keys
+# Loading work.synch
+# Loading work.pulse
+# Loading work.lights
+# Loading work.normalLight
+# Loading work.centerLight
+# Loading work.victory
+# Loading work.counter
+# Loading work.adder3Bit
+# Loading work.disp
+# ** Warning: (vsim-3015) ./adder9Bit.sv(9): [PCDPC] - Port size (1) does not match connection size (32) for port 'Cin'. The port definition is at: ./adder.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /game_tb/dut/b1/add/one File: ./adder.sv
+# ** Warning: (vsim-3015) ./adder3Bit.sv(8): [PCDPC] - Port size (1) does not match connection size (32) for port 'Cin'. The port definition is at: ./adder.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /game_tb/dut/L/add/one File: ./adder.sv
+# ** Warning: (vsim-3015) ./adder3Bit.sv(8): [PCDPC] - Port size (1) does not match connection size (32) for port 'Cin'. The port definition is at: ./adder.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /game_tb/dut/R/add/one File: ./adder.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./game_tb.sv(227)
+#    Time: 22450 ps  Iteration: 1  Instance: /game_tb
+# Break in Module game_tb at ./game_tb.sv line 227
+# End time: 16:51:34 on Nov 21,2024, Elapsed time: 0:13:32
+# Errors: 0, Warnings: 3

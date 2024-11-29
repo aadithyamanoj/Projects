@@ -1,0 +1,687 @@
+Analysis & Synthesis report for DE1_SoC
+Thu Nov 21 01:51:43 2024
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |lab6
+ 12. Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n1
+ 13. Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n2
+ 14. Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n3
+ 15. Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n4
+ 16. Parameter Settings for User Entity Instance: game:play|lights:all|centerLight:n5
+ 17. Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n6
+ 18. Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n7
+ 19. Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n8
+ 20. Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n9
+ 21. Port Connectivity Checks: "game:play|counter:L|adder3Bit:add|adder:three"
+ 22. Port Connectivity Checks: "game:play|counter:L|adder3Bit:add|adder:one"
+ 23. Port Connectivity Checks: "game:play|counter:L|adder3Bit:add"
+ 24. Port Connectivity Checks: "game:play|lights:all|normalLight:n9"
+ 25. Port Connectivity Checks: "game:play|lights:all|normalLight:n1"
+ 26. Port Connectivity Checks: "game:play|cyberPlayer:b1|adder9Bit:add|adder:one"
+ 27. Port Connectivity Checks: "game:play|cyberPlayer:b1|adder9Bit:add"
+ 28. Port Connectivity Checks: "clock_divider:cdiv"
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
+ 32. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Nov 21 01:51:42 2024       ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                   ; DE1_SoC                                     ;
+; Top-level Entity Name           ; lab6                                        ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 49                                          ;
+; Total pins                      ; 67                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; lab6               ; DE1_SoC            ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                               ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                             ;
++----------------------------------+-----------------+------------------------------+--------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path         ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------+---------+
+; centerLight.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/centerLight.sv   ;         ;
+; clock_divider.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/clock_divider.sv ;         ;
+; game.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/game.sv          ;         ;
+; input.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/input.sv         ;         ;
+; lab6.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/lab6.sv          ;         ;
+; lights.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/lights.sv        ;         ;
+; normalLight.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/normalLight.sv   ;         ;
+; pulse.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/pulse.sv         ;         ;
+; synch.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/synch.sv         ;         ;
+; victory.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/victory.sv       ;         ;
+; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/adder.sv         ;         ;
+; adder3Bit.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/adder3Bit.sv     ;         ;
+; counter.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/counter.sv       ;         ;
+; disp.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/disp.sv          ;         ;
+; LFSR.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/LFSR.sv          ;         ;
+; cyberPlayer.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/cyberPlayer.sv   ;         ;
+; adder9Bit.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/adder9Bit.sv     ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                         ;
++---------------------------------------------+---------------------------------------+
+; Resource                                    ; Usage                                 ;
++---------------------------------------------+---------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 35                                    ;
+;                                             ;                                       ;
+; Combinational ALUT usage for logic          ; 60                                    ;
+;     -- 7 input functions                    ; 0                                     ;
+;     -- 6 input functions                    ; 5                                     ;
+;     -- 5 input functions                    ; 8                                     ;
+;     -- 4 input functions                    ; 8                                     ;
+;     -- <=3 input functions                  ; 39                                    ;
+;                                             ;                                       ;
+; Dedicated logic registers                   ; 49                                    ;
+;                                             ;                                       ;
+; I/O pins                                    ; 67                                    ;
+;                                             ;                                       ;
+; Total DSP Blocks                            ; 0                                     ;
+;                                             ;                                       ;
+; Maximum fan-out node                        ; clock_divider:cdiv|divided_clocks[15] ;
+; Maximum fan-out                             ; 34                                    ;
+; Total fan-out                               ; 412                                   ;
+; Average fan-out                             ; 1.70                                  ;
++---------------------------------------------+---------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                           ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+---------------+--------------+
+; |lab6                      ; 60 (1)              ; 49 (0)                    ; 0                 ; 0          ; 67   ; 0            ; |lab6                                                    ; lab6          ; work         ;
+;    |clock_divider:cdiv|    ; 16 (16)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab6|clock_divider:cdiv                                 ; clock_divider ; work         ;
+;    |game:play|             ; 43 (0)              ; 33 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play                                          ; game          ; work         ;
+;       |counter:L|          ; 4 (2)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|counter:L                                ; counter       ; work         ;
+;          |adder3Bit:add|   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|counter:L|adder3Bit:add                  ; adder3Bit     ; work         ;
+;             |adder:three|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|counter:L|adder3Bit:add|adder:three      ; adder         ; work         ;
+;             |adder:two|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|counter:L|adder3Bit:add|adder:two        ; adder         ; work         ;
+;       |counter:R|          ; 4 (2)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|counter:R                                ; counter       ; work         ;
+;          |adder3Bit:add|   ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|counter:R|adder3Bit:add                  ; adder3Bit     ; work         ;
+;             |adder:three|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|counter:R|adder3Bit:add|adder:three      ; adder         ; work         ;
+;             |adder:two|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|counter:R|adder3Bit:add|adder:two        ; adder         ; work         ;
+;       |cyberPlayer:b1|     ; 9 (0)               ; 9 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|cyberPlayer:b1                           ; cyberPlayer   ; work         ;
+;          |LFSR:num|        ; 1 (1)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|cyberPlayer:b1|LFSR:num                  ; LFSR          ; work         ;
+;          |adder9Bit:add|   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|cyberPlayer:b1|adder9Bit:add             ; adder9Bit     ; work         ;
+;             |adder:eight|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|cyberPlayer:b1|adder9Bit:add|adder:eight ; adder         ; work         ;
+;             |adder:nine|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|cyberPlayer:b1|adder9Bit:add|adder:nine  ; adder         ; work         ;
+;       |disp:Left|          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|disp:Left                                ; disp          ; work         ;
+;       |disp:Right|         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|disp:Right                               ; disp          ; work         ;
+;       |keys:b2|            ; 1 (0)               ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|keys:b2                                  ; keys          ; work         ;
+;          |pulse:p|         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|keys:b2|pulse:p                          ; pulse         ; work         ;
+;          |synch:s|         ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|keys:b2|synch:s                          ; synch         ; work         ;
+;       |lights:all|         ; 11 (0)              ; 9 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|lights:all                               ; lights        ; work         ;
+;          |centerLight:n5|  ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|lights:all|centerLight:n5                ; centerLight   ; work         ;
+;          |normalLight:n1|  ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|lights:all|normalLight:n1                ; normalLight   ; work         ;
+;          |normalLight:n2|  ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|lights:all|normalLight:n2                ; normalLight   ; work         ;
+;          |normalLight:n3|  ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|lights:all|normalLight:n3                ; normalLight   ; work         ;
+;          |normalLight:n4|  ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|lights:all|normalLight:n4                ; normalLight   ; work         ;
+;          |normalLight:n6|  ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|lights:all|normalLight:n6                ; normalLight   ; work         ;
+;          |normalLight:n7|  ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|lights:all|normalLight:n7                ; normalLight   ; work         ;
+;          |normalLight:n8|  ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|lights:all|normalLight:n8                ; normalLight   ; work         ;
+;          |normalLight:n9|  ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |lab6|game:play|lights:all|normalLight:n9                ; normalLight   ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------+
+; Registers Removed During Synthesis                             ;
++-------------------------------------------+--------------------+
+; Register name                             ; Reason for Removal ;
++-------------------------------------------+--------------------+
+; clock_divider:cdiv|divided_clocks[16..31] ; Lost fanout        ;
+; Total Number of Removed Registers = 16    ;                    ;
++-------------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 49    ;
+; Number of registers using Synchronous Clear  ; 24    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |lab6|game:play|counter:L|PS[2] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |lab6|game:play|counter:R|PS[2] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |lab6 ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; whichClock     ; 25    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n1 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; ON             ; 1     ; Unsigned Binary                                         ;
+; OFF            ; 0     ; Unsigned Binary                                         ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n2 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; ON             ; 1     ; Unsigned Binary                                         ;
+; OFF            ; 0     ; Unsigned Binary                                         ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n3 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; ON             ; 1     ; Unsigned Binary                                         ;
+; OFF            ; 0     ; Unsigned Binary                                         ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n4 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; ON             ; 1     ; Unsigned Binary                                         ;
+; OFF            ; 0     ; Unsigned Binary                                         ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: game:play|lights:all|centerLight:n5 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; ON             ; 1     ; Unsigned Binary                                         ;
+; OFF            ; 0     ; Unsigned Binary                                         ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n6 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; ON             ; 1     ; Unsigned Binary                                         ;
+; OFF            ; 0     ; Unsigned Binary                                         ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n7 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; ON             ; 1     ; Unsigned Binary                                         ;
+; OFF            ; 0     ; Unsigned Binary                                         ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n8 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; ON             ; 1     ; Unsigned Binary                                         ;
+; OFF            ; 0     ; Unsigned Binary                                         ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: game:play|lights:all|normalLight:n9 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; ON             ; 1     ; Unsigned Binary                                         ;
+; OFF            ; 0     ; Unsigned Binary                                         ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "game:play|counter:L|adder3Bit:add|adder:three"                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "game:play|counter:L|adder3Bit:add|adder:one"                                                                                                                                         ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Cin[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "game:play|counter:L|adder3Bit:add" ;
++---------+-------+----------+----------------------------------+
+; Port    ; Type  ; Severity ; Details                          ;
++---------+-------+----------+----------------------------------+
+; b[2..1] ; Input ; Info     ; Stuck at GND                     ;
+; b[0]    ; Input ; Info     ; Stuck at VCC                     ;
++---------+-------+----------+----------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "game:play|lights:all|normalLight:n9" ;
++------+-------+----------+---------------------------------------+
+; Port ; Type  ; Severity ; Details                               ;
++------+-------+----------+---------------------------------------+
+; NL   ; Input ; Info     ; Stuck at GND                          ;
++------+-------+----------+---------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "game:play|lights:all|normalLight:n1" ;
++------+-------+----------+---------------------------------------+
+; Port ; Type  ; Severity ; Details                               ;
++------+-------+----------+---------------------------------------+
+; NR   ; Input ; Info     ; Stuck at GND                          ;
++------+-------+----------+---------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "game:play|cyberPlayer:b1|adder9Bit:add|adder:one"                                                                                                                                    ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Cin[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "game:play|cyberPlayer:b1|adder9Bit:add"                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; sum  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divider:cdiv"                                                                                   ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                   ; Type   ; Severity ; Details                                                                             ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; divided_clocks[31..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; divided_clocks[14..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 49                          ;
+;     ENA SCLR          ; 4                           ;
+;     SCLR              ; 20                          ;
+;     plain             ; 25                          ;
+; arriav_lcell_comb     ; 61                          ;
+;     arith             ; 15                          ;
+;         1 data inputs ; 14                          ;
+;         2 data inputs ; 1                           ;
+;     normal            ; 46                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 18                          ;
+;         4 data inputs ; 8                           ;
+;         5 data inputs ; 8                           ;
+;         6 data inputs ; 5                           ;
+; boundary_port         ; 67                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 2.42                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Thu Nov 21 01:51:31 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file centerlight.sv
+    Info (12023): Found entity 1: centerLight File: C:/Users/Aadit/lab7/centerLight.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file centerlight_tb.sv
+    Info (12023): Found entity 1: centerLight_tb File: C:/Users/Aadit/lab7/centerLight_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clock_divider.sv
+    Info (12023): Found entity 1: clock_divider File: C:/Users/Aadit/lab7/clock_divider.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file game.sv
+    Info (12023): Found entity 1: game File: C:/Users/Aadit/lab7/game.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file game_tb.sv
+    Info (12023): Found entity 1: game_tb File: C:/Users/Aadit/lab7/game_tb.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file input.sv
+    Info (12023): Found entity 1: keys File: C:/Users/Aadit/lab7/input.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file input_tb.sv
+    Info (12023): Found entity 1: input_tb File: C:/Users/Aadit/lab7/input_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lab6.sv
+    Info (12023): Found entity 1: lab6 File: C:/Users/Aadit/lab7/lab6.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lights.sv
+    Info (12023): Found entity 1: lights File: C:/Users/Aadit/lab7/lights.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lights_tb.sv
+    Info (12023): Found entity 1: lights_tb File: C:/Users/Aadit/lab7/lights_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file normallight.sv
+    Info (12023): Found entity 1: normalLight File: C:/Users/Aadit/lab7/normalLight.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file normallight_tb.sv
+    Info (12023): Found entity 1: normalLight_tb File: C:/Users/Aadit/lab7/normalLight_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pulse.sv
+    Info (12023): Found entity 1: pulse File: C:/Users/Aadit/lab7/pulse.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file synch.sv
+    Info (12023): Found entity 1: synch File: C:/Users/Aadit/lab7/synch.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file victory.sv
+    Info (12023): Found entity 1: victory File: C:/Users/Aadit/lab7/victory.sv Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file victory_tb.sv
+Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
+    Info (12023): Found entity 1: adder File: C:/Users/Aadit/lab7/adder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder3bit.sv
+    Info (12023): Found entity 1: adder3Bit File: C:/Users/Aadit/lab7/adder3Bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
+    Info (12023): Found entity 1: counter File: C:/Users/Aadit/lab7/counter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file disp.sv
+    Info (12023): Found entity 1: disp File: C:/Users/Aadit/lab7/disp.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lfsr.sv
+    Info (12023): Found entity 1: LFSR File: C:/Users/Aadit/lab7/LFSR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cyberplayer.sv
+    Info (12023): Found entity 1: cyberPlayer File: C:/Users/Aadit/lab7/cyberPlayer.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder_tb.sv
+    Info (12023): Found entity 1: adder_tb File: C:/Users/Aadit/lab7/adder_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder3bit_tb.sv
+    Info (12023): Found entity 1: adder3Bit_tb File: C:/Users/Aadit/lab7/adder3Bit_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lfsr_tb.sv
+    Info (12023): Found entity 1: LFSR_tb File: C:/Users/Aadit/lab7/LFSR_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cyberplayer_tb.sv
+    Info (12023): Found entity 1: cyberPlayer_tb File: C:/Users/Aadit/lab7/cyberPlayer_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file counter_tb.sv
+    Info (12023): Found entity 1: counter_tb File: C:/Users/Aadit/lab7/counter_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder9bit.sv
+    Info (12023): Found entity 1: adder9Bit File: C:/Users/Aadit/lab7/adder9Bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder9bit_tb.sv
+    Info (12023): Found entity 1: adder9Bit_tb File: C:/Users/Aadit/lab7/adder9Bit_tb.sv Line: 1
+Info (12127): Elaborating entity "lab6" for the top level hierarchy
+Warning (10034): Output port "HEX1" at lab6.sv(7) has no driver File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+Warning (10034): Output port "HEX2" at lab6.sv(7) has no driver File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+Warning (10034): Output port "HEX3" at lab6.sv(7) has no driver File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+Warning (10034): Output port "HEX4" at lab6.sv(7) has no driver File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+Warning (10034): Output port "LEDR[0]" at lab6.sv(8) has no driver File: C:/Users/Aadit/lab7/lab6.sv Line: 8
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:cdiv" File: C:/Users/Aadit/lab7/lab6.sv Line: 15
+Info (12128): Elaborating entity "game" for hierarchy "game:play" File: C:/Users/Aadit/lab7/lab6.sv Line: 17
+Info (12128): Elaborating entity "cyberPlayer" for hierarchy "game:play|cyberPlayer:b1" File: C:/Users/Aadit/lab7/game.sv Line: 14
+Info (12128): Elaborating entity "LFSR" for hierarchy "game:play|cyberPlayer:b1|LFSR:num" File: C:/Users/Aadit/lab7/cyberPlayer.sv Line: 12
+Info (12128): Elaborating entity "adder9Bit" for hierarchy "game:play|cyberPlayer:b1|adder9Bit:add" File: C:/Users/Aadit/lab7/cyberPlayer.sv Line: 14
+Info (12128): Elaborating entity "adder" for hierarchy "game:play|cyberPlayer:b1|adder9Bit:add|adder:one" File: C:/Users/Aadit/lab7/adder9Bit.sv Line: 9
+Info (12128): Elaborating entity "keys" for hierarchy "game:play|keys:b2" File: C:/Users/Aadit/lab7/game.sv Line: 17
+Info (12128): Elaborating entity "synch" for hierarchy "game:play|keys:b2|synch:s" File: C:/Users/Aadit/lab7/input.sv Line: 8
+Info (12128): Elaborating entity "pulse" for hierarchy "game:play|keys:b2|pulse:p" File: C:/Users/Aadit/lab7/input.sv Line: 9
+Info (12128): Elaborating entity "lights" for hierarchy "game:play|lights:all" File: C:/Users/Aadit/lab7/game.sv Line: 19
+Info (12128): Elaborating entity "normalLight" for hierarchy "game:play|lights:all|normalLight:n1" File: C:/Users/Aadit/lab7/lights.sv Line: 7
+Info (12128): Elaborating entity "centerLight" for hierarchy "game:play|lights:all|centerLight:n5" File: C:/Users/Aadit/lab7/lights.sv Line: 11
+Info (12128): Elaborating entity "victory" for hierarchy "game:play|victory:win" File: C:/Users/Aadit/lab7/game.sv Line: 21
+Info (12128): Elaborating entity "counter" for hierarchy "game:play|counter:L" File: C:/Users/Aadit/lab7/game.sv Line: 23
+Info (12128): Elaborating entity "adder3Bit" for hierarchy "game:play|counter:L|adder3Bit:add" File: C:/Users/Aadit/lab7/counter.sv Line: 11
+Info (12128): Elaborating entity "disp" for hierarchy "game:play|disp:Left" File: C:/Users/Aadit/lab7/game.sv Line: 26
+Warning (12020): Port "ordered port 2" on the entity instantiation of "one" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: C:/Users/Aadit/lab7/adder3Bit.sv Line: 8
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 8
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 16 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/Aadit/lab7/DE1_SoC.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Aadit/lab7/lab6.sv Line: 9
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Aadit/lab7/lab6.sv Line: 9
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Aadit/lab7/lab6.sv Line: 9
+Info (21057): Implemented 143 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 76 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 42 warnings
+    Info: Peak virtual memory: 4831 megabytes
+    Info: Processing ended: Thu Nov 21 01:51:43 2024
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:08
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Aadit/lab7/DE1_SoC.map.smsg.
+
+

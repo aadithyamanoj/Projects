@@ -1,0 +1,328 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do irunlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:05 on Nov 14,2024
+# vlog -reportprogress 300 ./centerLight.sv 
+# -- Compiling module centerLight
+# 
+# Top level modules:
+# 	centerLight
+# End time: 16:55:05 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:05 on Nov 14,2024
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 16:55:05 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:05 on Nov 14,2024
+# vlog -reportprogress 300 ./input.sv 
+# -- Compiling module keys
+# 
+# Top level modules:
+# 	keys
+# End time: 16:55:05 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:05 on Nov 14,2024
+# vlog -reportprogress 300 ./input_tb.sv 
+# -- Compiling module input_tb
+# 
+# Top level modules:
+# 	input_tb
+# End time: 16:55:06 on Nov 14,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:06 on Nov 14,2024
+# vlog -reportprogress 300 ./lab6.sv 
+# -- Compiling module lab6
+# 
+# Top level modules:
+# 	lab6
+# End time: 16:55:06 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:06 on Nov 14,2024
+# vlog -reportprogress 300 ./lights.sv 
+# -- Compiling module lights
+# 
+# Top level modules:
+# 	lights
+# End time: 16:55:06 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:06 on Nov 14,2024
+# vlog -reportprogress 300 ./normalLight.sv 
+# -- Compiling module normalLight
+# 
+# Top level modules:
+# 	normalLight
+# End time: 16:55:06 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:06 on Nov 14,2024
+# vlog -reportprogress 300 ./pulse.sv 
+# -- Compiling module pulse
+# 
+# Top level modules:
+# 	pulse
+# End time: 16:55:06 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:06 on Nov 14,2024
+# vlog -reportprogress 300 ./synch.sv 
+# -- Compiling module synch
+# 
+# Top level modules:
+# 	synch
+# End time: 16:55:06 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:06 on Nov 14,2024
+# vlog -reportprogress 300 ./victory.sv 
+# -- Compiling module victory
+# 
+# Top level modules:
+# 	victory
+# End time: 16:55:06 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:06 on Nov 14,2024
+# vlog -reportprogress 300 ./game.sv 
+# -- Compiling module game
+# 
+# Top level modules:
+# 	game
+# End time: 16:55:06 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:06 on Nov 14,2024
+# vlog -reportprogress 300 ./normalLight_tb.sv 
+# -- Compiling module normalLight_tb
+# 
+# Top level modules:
+# 	normalLight_tb
+# End time: 16:55:06 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:06 on Nov 14,2024
+# vlog -reportprogress 300 ./centerLight_tb.sv 
+# -- Compiling module centerLight_tb
+# 
+# Top level modules:
+# 	centerLight_tb
+# End time: 16:55:06 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:07 on Nov 14,2024
+# vlog -reportprogress 300 ./victory_tb.sv 
+# -- Compiling module victory_tb
+# 
+# Top level modules:
+# 	victory_tb
+# End time: 16:55:07 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:07 on Nov 14,2024
+# vlog -reportprogress 300 ./lights_tb.sv 
+# -- Compiling module lights_tb
+# 
+# Top level modules:
+# 	lights_tb
+# End time: 16:55:07 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:07 on Nov 14,2024
+# vlog -reportprogress 300 ./game_tb.sv 
+# -- Compiling module game_tb
+# 
+# Top level modules:
+# 	game_tb
+# End time: 16:55:07 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work input_tb 
+# Start time: 16:55:08 on Nov 14,2024
+# Loading sv_std.std
+# Loading work.input_tb
+# Loading work.keys
+# Loading work.synch
+# Loading work.pulse
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./input_tb.sv(42)
+#    Time: 2150 ps  Iteration: 1  Instance: /input_tb
+# Break in Module input_tb at ./input_tb.sv line 42
+do grunlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:20 on Nov 14,2024
+# vlog -reportprogress 300 ./centerLight.sv 
+# -- Compiling module centerLight
+# 
+# Top level modules:
+# 	centerLight
+# End time: 16:56:21 on Nov 14,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:21 on Nov 14,2024
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 16:56:21 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:21 on Nov 14,2024
+# vlog -reportprogress 300 ./input.sv 
+# -- Compiling module keys
+# 
+# Top level modules:
+# 	keys
+# End time: 16:56:21 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:21 on Nov 14,2024
+# vlog -reportprogress 300 ./input_tb.sv 
+# -- Compiling module input_tb
+# 
+# Top level modules:
+# 	input_tb
+# End time: 16:56:22 on Nov 14,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:22 on Nov 14,2024
+# vlog -reportprogress 300 ./lab6.sv 
+# -- Compiling module lab6
+# 
+# Top level modules:
+# 	lab6
+# End time: 16:56:22 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:22 on Nov 14,2024
+# vlog -reportprogress 300 ./lights.sv 
+# -- Compiling module lights
+# 
+# Top level modules:
+# 	lights
+# End time: 16:56:22 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:22 on Nov 14,2024
+# vlog -reportprogress 300 ./normalLight.sv 
+# -- Compiling module normalLight
+# 
+# Top level modules:
+# 	normalLight
+# End time: 16:56:22 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:22 on Nov 14,2024
+# vlog -reportprogress 300 ./pulse.sv 
+# -- Compiling module pulse
+# 
+# Top level modules:
+# 	pulse
+# End time: 16:56:22 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:22 on Nov 14,2024
+# vlog -reportprogress 300 ./synch.sv 
+# -- Compiling module synch
+# 
+# Top level modules:
+# 	synch
+# End time: 16:56:22 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:22 on Nov 14,2024
+# vlog -reportprogress 300 ./victory.sv 
+# -- Compiling module victory
+# 
+# Top level modules:
+# 	victory
+# End time: 16:56:22 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:22 on Nov 14,2024
+# vlog -reportprogress 300 ./game.sv 
+# -- Compiling module game
+# 
+# Top level modules:
+# 	game
+# End time: 16:56:22 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:22 on Nov 14,2024
+# vlog -reportprogress 300 ./normalLight_tb.sv 
+# -- Compiling module normalLight_tb
+# 
+# Top level modules:
+# 	normalLight_tb
+# End time: 16:56:22 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:22 on Nov 14,2024
+# vlog -reportprogress 300 ./centerLight_tb.sv 
+# -- Compiling module centerLight_tb
+# 
+# Top level modules:
+# 	centerLight_tb
+# End time: 16:56:23 on Nov 14,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:23 on Nov 14,2024
+# vlog -reportprogress 300 ./victory_tb.sv 
+# -- Compiling module victory_tb
+# 
+# Top level modules:
+# 	victory_tb
+# End time: 16:56:23 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:23 on Nov 14,2024
+# vlog -reportprogress 300 ./lights_tb.sv 
+# -- Compiling module lights_tb
+# 
+# Top level modules:
+# 	lights_tb
+# End time: 16:56:23 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:23 on Nov 14,2024
+# vlog -reportprogress 300 ./game_tb.sv 
+# -- Compiling module game_tb
+# 
+# Top level modules:
+# 	game_tb
+# End time: 16:56:23 on Nov 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:56:25 on Nov 14,2024, Elapsed time: 0:01:17
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work game_tb 
+# Start time: 16:56:25 on Nov 14,2024
+# Loading sv_std.std
+# Loading work.game_tb
+# Loading work.game
+# Loading work.keys
+# Loading work.synch
+# Loading work.pulse
+# Loading work.lights
+# Loading work.normalLight
+# Loading work.centerLight
+# Loading work.victory
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./game_tb.sv(136)
+#    Time: 6550 ps  Iteration: 1  Instance: /game_tb
+# Break in Module game_tb at ./game_tb.sv line 136
+# End time: 11:45:00 on Nov 16,2024, Elapsed time: 42:48:35
+# Errors: 0, Warnings: 0

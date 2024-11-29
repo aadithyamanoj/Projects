@@ -1,0 +1,672 @@
+|lab6
+CLOCK_50 => CLOCK_50.IN1
+HEX0[0] <= game:play.HEX0
+HEX0[1] <= game:play.HEX0
+HEX0[2] <= game:play.HEX0
+HEX0[3] <= game:play.HEX0
+HEX0[4] <= game:play.HEX0
+HEX0[5] <= game:play.HEX0
+HEX0[6] <= game:play.HEX0
+HEX1[0] <= <GND>
+HEX1[1] <= <GND>
+HEX1[2] <= <GND>
+HEX1[3] <= <GND>
+HEX1[4] <= <GND>
+HEX1[5] <= <GND>
+HEX1[6] <= <GND>
+HEX2[0] <= <GND>
+HEX2[1] <= <GND>
+HEX2[2] <= <GND>
+HEX2[3] <= <GND>
+HEX2[4] <= <GND>
+HEX2[5] <= <GND>
+HEX2[6] <= <GND>
+HEX3[0] <= <GND>
+HEX3[1] <= <GND>
+HEX3[2] <= <GND>
+HEX3[3] <= <GND>
+HEX3[4] <= <GND>
+HEX3[5] <= <GND>
+HEX3[6] <= <GND>
+HEX4[0] <= <GND>
+HEX4[1] <= <GND>
+HEX4[2] <= <GND>
+HEX4[3] <= <GND>
+HEX4[4] <= <GND>
+HEX4[5] <= <GND>
+HEX4[6] <= <GND>
+HEX5[0] <= game:play.HEX4
+HEX5[1] <= game:play.HEX4
+HEX5[2] <= game:play.HEX4
+HEX5[3] <= game:play.HEX4
+HEX5[4] <= game:play.HEX4
+HEX5[5] <= game:play.HEX4
+HEX5[6] <= game:play.HEX4
+LEDR[0] <= <GND>
+LEDR[1] <= game:play.LED
+LEDR[2] <= game:play.LED
+LEDR[3] <= game:play.LED
+LEDR[4] <= game:play.LED
+LEDR[5] <= game:play.LED
+LEDR[6] <= game:play.LED
+LEDR[7] <= game:play.LED
+LEDR[8] <= game:play.LED
+LEDR[9] <= game:play.LED
+KEY[0] => _.IN1
+KEY[1] => _.IN1
+KEY[2] => _.IN1
+KEY[3] => _.IN1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN1
+
+
+|lab6|clock_divider:cdiv
+clock => divided_clocks[0]~reg0.CLK
+clock => divided_clocks[1]~reg0.CLK
+clock => divided_clocks[2]~reg0.CLK
+clock => divided_clocks[3]~reg0.CLK
+clock => divided_clocks[4]~reg0.CLK
+clock => divided_clocks[5]~reg0.CLK
+clock => divided_clocks[6]~reg0.CLK
+clock => divided_clocks[7]~reg0.CLK
+clock => divided_clocks[8]~reg0.CLK
+clock => divided_clocks[9]~reg0.CLK
+clock => divided_clocks[10]~reg0.CLK
+clock => divided_clocks[11]~reg0.CLK
+clock => divided_clocks[12]~reg0.CLK
+clock => divided_clocks[13]~reg0.CLK
+clock => divided_clocks[14]~reg0.CLK
+clock => divided_clocks[15]~reg0.CLK
+clock => divided_clocks[16]~reg0.CLK
+clock => divided_clocks[17]~reg0.CLK
+clock => divided_clocks[18]~reg0.CLK
+clock => divided_clocks[19]~reg0.CLK
+clock => divided_clocks[20]~reg0.CLK
+clock => divided_clocks[21]~reg0.CLK
+clock => divided_clocks[22]~reg0.CLK
+clock => divided_clocks[23]~reg0.CLK
+clock => divided_clocks[24]~reg0.CLK
+clock => divided_clocks[25]~reg0.CLK
+clock => divided_clocks[26]~reg0.CLK
+clock => divided_clocks[27]~reg0.CLK
+clock => divided_clocks[28]~reg0.CLK
+clock => divided_clocks[29]~reg0.CLK
+clock => divided_clocks[30]~reg0.CLK
+clock => divided_clocks[31]~reg0.CLK
+divided_clocks[0] <= divided_clocks[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[1] <= divided_clocks[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[2] <= divided_clocks[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[3] <= divided_clocks[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[4] <= divided_clocks[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[5] <= divided_clocks[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[6] <= divided_clocks[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[7] <= divided_clocks[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[8] <= divided_clocks[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[9] <= divided_clocks[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[10] <= divided_clocks[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[11] <= divided_clocks[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[12] <= divided_clocks[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[13] <= divided_clocks[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[14] <= divided_clocks[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[15] <= divided_clocks[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[16] <= divided_clocks[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[17] <= divided_clocks[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[18] <= divided_clocks[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[19] <= divided_clocks[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[20] <= divided_clocks[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[21] <= divided_clocks[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[22] <= divided_clocks[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[23] <= divided_clocks[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[24] <= divided_clocks[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[25] <= divided_clocks[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[26] <= divided_clocks[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[27] <= divided_clocks[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[28] <= divided_clocks[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[29] <= divided_clocks[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[30] <= divided_clocks[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+divided_clocks[31] <= divided_clocks[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play
+clk => clk.IN8
+key[0] => key[0].IN1
+key[1] => ~NO_FANOUT~
+key[2] => ~NO_FANOUT~
+key[3] => ~NO_FANOUT~
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+reset => reset.IN8
+LED[1] <= LED[1].DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= lights:all.led
+LED[3] <= lights:all.led
+LED[4] <= lights:all.led
+LED[5] <= lights:all.led
+LED[6] <= lights:all.led
+LED[7] <= lights:all.led
+LED[8] <= lights:all.led
+LED[9] <= LED[9].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= disp:Right.light
+HEX0[1] <= disp:Right.light
+HEX0[2] <= disp:Right.light
+HEX0[3] <= disp:Right.light
+HEX0[4] <= disp:Right.light
+HEX0[5] <= disp:Right.light
+HEX0[6] <= disp:Right.light
+HEX4[0] <= disp:Left.light
+HEX4[1] <= disp:Left.light
+HEX4[2] <= disp:Left.light
+HEX4[3] <= disp:Left.light
+HEX4[4] <= disp:Left.light
+HEX4[5] <= disp:Left.light
+HEX4[6] <= disp:Left.light
+
+
+|lab6|game:play|cyberPlayer:b1
+clk => clk.IN1
+reset => reset.IN1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+out <= adder9Bit:add.port3
+
+
+|lab6|game:play|cyberPlayer:b1|LFSR:num
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clk => Q[4]~reg0.CLK
+clk => Q[5]~reg0.CLK
+clk => Q[6]~reg0.CLK
+clk => Q[7]~reg0.CLK
+clk => Q[8]~reg0.CLK
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|cyberPlayer:b1|adder9Bit:add
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+sum[0] <= adder:one.port4
+sum[1] <= adder:two.port4
+sum[2] <= adder:three.port4
+sum[3] <= adder:four.port4
+sum[4] <= adder:five.port4
+sum[5] <= adder:six.port4
+sum[6] <= adder:seven.port4
+sum[7] <= adder:eight.port4
+sum[8] <= adder:nine.port4
+cOut <= adder:nine.port3
+
+
+|lab6|game:play|cyberPlayer:b1|adder9Bit:add|adder:one
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|cyberPlayer:b1|adder9Bit:add|adder:two
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|cyberPlayer:b1|adder9Bit:add|adder:three
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|cyberPlayer:b1|adder9Bit:add|adder:four
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|cyberPlayer:b1|adder9Bit:add|adder:five
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|cyberPlayer:b1|adder9Bit:add|adder:six
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|cyberPlayer:b1|adder9Bit:add|adder:seven
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|cyberPlayer:b1|adder9Bit:add|adder:eight
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|cyberPlayer:b1|adder9Bit:add|adder:nine
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|keys:b2
+clk => clk.IN2
+reset => reset.IN2
+key => key.IN1
+keyOut <= pulse:p.out
+
+
+|lab6|game:play|keys:b2|synch:s
+clk => out~reg0.CLK
+clk => mid.CLK
+reset => mid.OUTPUTSELECT
+reset => out.OUTPUTSELECT
+in => mid.DATAA
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|keys:b2|pulse:p
+clk => ps.CLK
+reset => ps.OUTPUTSELECT
+in => out.IN1
+in => ps.DATAA
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all
+clk => clk.IN9
+reset => reset.IN8
+L => L.IN9
+R => R.IN9
+wL => comb.IN0
+wR => comb.IN1
+led[1] <= led[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led[2].DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led[3].DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= led[4].DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= led[5].DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= led[6].DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= led[7].DB_MAX_OUTPUT_PORT_TYPE
+led[8] <= led[8].DB_MAX_OUTPUT_PORT_TYPE
+led[9] <= led[9].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n1
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n2
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n3
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n4
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|centerLight:n5
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n6
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n7
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n8
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|lights:all|normalLight:n9
+clk => PS.CLK
+reset => PS.OUTPUTSELECT
+L => always0.IN0
+L => always0.IN0
+R => always0.IN0
+R => always0.IN1
+NL => always0.IN1
+NR => always0.IN1
+lightOn <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|victory:win
+clk => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+L => comb.IN0
+L => comb.IN1
+R => comb.IN0
+R => comb.IN1
+NL => comb.IN1
+NR => comb.IN1
+wL <= comb.DB_MAX_OUTPUT_PORT_TYPE
+wR <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|counter:L
+clk => PS[0].CLK
+clk => PS[1].CLK
+clk => PS[2].CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+reset => NS[2].OUTPUTSELECT
+reset => NS[1].OUTPUTSELECT
+reset => NS[0].OUTPUTSELECT
+in => NS.OUTPUTSELECT
+in => NS.OUTPUTSELECT
+in => NS.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|counter:L|adder3Bit:add
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+sum[0] <= adder:one.port4
+sum[1] <= adder:two.port4
+sum[2] <= adder:three.port4
+
+
+|lab6|game:play|counter:L|adder3Bit:add|adder:one
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|counter:L|adder3Bit:add|adder:two
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|counter:L|adder3Bit:add|adder:three
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|counter:R
+clk => PS[0].CLK
+clk => PS[1].CLK
+clk => PS[2].CLK
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+reset => NS[2].OUTPUTSELECT
+reset => NS[1].OUTPUTSELECT
+reset => NS[0].OUTPUTSELECT
+in => NS.OUTPUTSELECT
+in => NS.OUTPUTSELECT
+in => NS.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|counter:R|adder3Bit:add
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+sum[0] <= adder:one.port4
+sum[1] <= adder:two.port4
+sum[2] <= adder:three.port4
+
+
+|lab6|game:play|counter:R|adder3Bit:add|adder:one
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|counter:R|adder3Bit:add|adder:two
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|counter:R|adder3Bit:add|adder:three
+a => comb.IN0
+a => comb.IN0
+b => comb.IN1
+b => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|disp:Left
+clk => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+count[0] => Decoder0.IN2
+count[1] => Decoder0.IN1
+count[2] => Decoder0.IN0
+light[0] <= light.DB_MAX_OUTPUT_PORT_TYPE
+light[1] <= light.DB_MAX_OUTPUT_PORT_TYPE
+light[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+light[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+light[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+light[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+light[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|game:play|disp:Right
+clk => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+count[0] => Decoder0.IN2
+count[1] => Decoder0.IN1
+count[2] => Decoder0.IN0
+light[0] <= light.DB_MAX_OUTPUT_PORT_TYPE
+light[1] <= light.DB_MAX_OUTPUT_PORT_TYPE
+light[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+light[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+light[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+light[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+light[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
