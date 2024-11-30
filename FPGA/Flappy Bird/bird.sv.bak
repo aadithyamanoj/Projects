@@ -1,0 +1,40 @@
+module bird(
+input logic clk, reset, key
+output logic [15:0] lights 
+);
+
+
+//bird is one pixel
+//pipes are two pixels wide
+//randomly generate a 3 pixel long gap (lfsr makes a bitmask)
+
+logic [15:0] PS, NS;
+
+always_comb begin
+	
+
+
+
+
+
+
+end 
+
+assign lights = PS;
+
+
+always_ff @(posedge clk) begin 
+
+	if(reset) begin 
+		PS <= 16'b0000000100000000;
+	end
+
+	else begin
+		PS<=NS;
+	end
+
+
+
+
+
+endmodule 

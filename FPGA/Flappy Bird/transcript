@@ -1,0 +1,656 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do gravrunlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:19 on Nov 27,2024
+# vlog -reportprogress 300 ./bird.sv 
+# -- Compiling module bird
+# 
+# Top level modules:
+# 	bird
+# End time: 13:33:19 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:19 on Nov 27,2024
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 13:33:19 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:19 on Nov 27,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:33:19 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:19 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity.sv 
+# -- Compiling module gravity
+# 
+# Top level modules:
+# 	gravity
+# End time: 13:33:19 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:19 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity_tb.sv 
+# -- Compiling module gravity_tb
+# 
+# Top level modules:
+# 	gravity_tb
+# End time: 13:33:19 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:19 on Nov 27,2024
+# vlog -reportprogress 300 ./LED_test.sv 
+# -- Compiling module LED_test
+# -- Compiling module LED_test_testbench
+# 
+# Top level modules:
+# 	LED_test_testbench
+# End time: 13:33:19 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:19 on Nov 27,2024
+# vlog -reportprogress 300 ./LEDDriver.sv 
+# -- Compiling module LEDDriver
+# -- Compiling module LEDDriver_Test
+# -- Compiling module LEDDriver_TestPhysical
+# 
+# Top level modules:
+# 	LEDDriver_Test
+# 	LEDDriver_TestPhysical
+# End time: 13:33:19 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work gravity_tb 
+# Start time: 13:33:19 on Nov 27,2024
+# Loading sv_std.std
+# Loading work.gravity_tb
+# Loading work.gravity
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./gravity_tb.sv(24)
+#    Time: 200150 ps  Iteration: 1  Instance: /gravity_tb
+# Break in Module gravity_tb at ./gravity_tb.sv line 24
+do gravrunlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:36:32 on Nov 27,2024
+# vlog -reportprogress 300 ./bird.sv 
+# -- Compiling module bird
+# 
+# Top level modules:
+# 	bird
+# End time: 13:36:32 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:36:32 on Nov 27,2024
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 13:36:32 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:36:32 on Nov 27,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:36:32 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:36:32 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity.sv 
+# -- Compiling module gravity
+# 
+# Top level modules:
+# 	gravity
+# End time: 13:36:32 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:36:32 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity_tb.sv 
+# -- Compiling module gravity_tb
+# 
+# Top level modules:
+# 	gravity_tb
+# End time: 13:36:32 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:36:32 on Nov 27,2024
+# vlog -reportprogress 300 ./LED_test.sv 
+# -- Compiling module LED_test
+# -- Compiling module LED_test_testbench
+# 
+# Top level modules:
+# 	LED_test_testbench
+# End time: 13:36:32 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:36:32 on Nov 27,2024
+# vlog -reportprogress 300 ./LEDDriver.sv 
+# -- Compiling module LEDDriver
+# -- Compiling module LEDDriver_Test
+# -- Compiling module LEDDriver_TestPhysical
+# 
+# Top level modules:
+# 	LEDDriver_Test
+# 	LEDDriver_TestPhysical
+# End time: 13:36:32 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:36:36 on Nov 27,2024, Elapsed time: 0:03:17
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work gravity_tb 
+# Start time: 13:36:36 on Nov 27,2024
+# Loading sv_std.std
+# Loading work.gravity_tb
+# Loading work.gravity
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./gravity_tb.sv(60)
+#    Time: 3750 ps  Iteration: 1  Instance: /gravity_tb
+# Break in Module gravity_tb at ./gravity_tb.sv line 60
+do gravrunlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:40:03 on Nov 27,2024
+# vlog -reportprogress 300 ./bird.sv 
+# -- Compiling module bird
+# 
+# Top level modules:
+# 	bird
+# End time: 13:40:03 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:40:03 on Nov 27,2024
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 13:40:03 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:40:03 on Nov 27,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:40:03 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:40:03 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity.sv 
+# -- Compiling module gravity
+# 
+# Top level modules:
+# 	gravity
+# End time: 13:40:03 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:40:03 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity_tb.sv 
+# -- Compiling module gravity_tb
+# 
+# Top level modules:
+# 	gravity_tb
+# End time: 13:40:03 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:40:03 on Nov 27,2024
+# vlog -reportprogress 300 ./LED_test.sv 
+# -- Compiling module LED_test
+# -- Compiling module LED_test_testbench
+# 
+# Top level modules:
+# 	LED_test_testbench
+# End time: 13:40:03 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:40:03 on Nov 27,2024
+# vlog -reportprogress 300 ./LEDDriver.sv 
+# -- Compiling module LEDDriver
+# -- Compiling module LEDDriver_Test
+# -- Compiling module LEDDriver_TestPhysical
+# 
+# Top level modules:
+# 	LEDDriver_Test
+# 	LEDDriver_TestPhysical
+# End time: 13:40:03 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:40:09 on Nov 27,2024, Elapsed time: 0:03:33
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work gravity_tb 
+# Start time: 13:40:09 on Nov 27,2024
+# Loading sv_std.std
+# Loading work.gravity_tb
+# Loading work.gravity
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./gravity_tb.sv(24)
+#    Time: 200150 ps  Iteration: 1  Instance: /gravity_tb
+# Break in Module gravity_tb at ./gravity_tb.sv line 24
+do gravrunlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:47:50 on Nov 27,2024
+# vlog -reportprogress 300 ./bird.sv 
+# -- Compiling module bird
+# 
+# Top level modules:
+# 	bird
+# End time: 13:47:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:47:50 on Nov 27,2024
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 13:47:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:47:50 on Nov 27,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:47:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:47:50 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity.sv 
+# -- Compiling module gravity
+# 
+# Top level modules:
+# 	gravity
+# End time: 13:47:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:47:50 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity_tb.sv 
+# -- Compiling module gravity_tb
+# 
+# Top level modules:
+# 	gravity_tb
+# End time: 13:47:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:47:50 on Nov 27,2024
+# vlog -reportprogress 300 ./LED_test.sv 
+# -- Compiling module LED_test
+# -- Compiling module LED_test_testbench
+# 
+# Top level modules:
+# 	LED_test_testbench
+# End time: 13:47:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:47:50 on Nov 27,2024
+# vlog -reportprogress 300 ./LEDDriver.sv 
+# -- Compiling module LEDDriver
+# -- Compiling module LEDDriver_Test
+# -- Compiling module LEDDriver_TestPhysical
+# 
+# Top level modules:
+# 	LEDDriver_Test
+# 	LEDDriver_TestPhysical
+# End time: 13:47:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:47:52 on Nov 27,2024, Elapsed time: 0:07:43
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work gravity_tb 
+# Start time: 13:47:52 on Nov 27,2024
+# Loading sv_std.std
+# Loading work.gravity_tb
+# Loading work.gravity
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./gravity_tb.sv(24)
+#    Time: 200150 ps  Iteration: 1  Instance: /gravity_tb
+# Break in Module gravity_tb at ./gravity_tb.sv line 24
+do gravrunlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:50:10 on Nov 27,2024
+# vlog -reportprogress 300 ./bird.sv 
+# -- Compiling module bird
+# 
+# Top level modules:
+# 	bird
+# End time: 13:50:10 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:50:10 on Nov 27,2024
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 13:50:10 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:50:10 on Nov 27,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:50:10 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:50:10 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity.sv 
+# -- Compiling module gravity
+# 
+# Top level modules:
+# 	gravity
+# End time: 13:50:10 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:50:10 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity_tb.sv 
+# -- Compiling module gravity_tb
+# 
+# Top level modules:
+# 	gravity_tb
+# End time: 13:50:10 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:50:11 on Nov 27,2024
+# vlog -reportprogress 300 ./LED_test.sv 
+# -- Compiling module LED_test
+# -- Compiling module LED_test_testbench
+# 
+# Top level modules:
+# 	LED_test_testbench
+# End time: 13:50:11 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:50:11 on Nov 27,2024
+# vlog -reportprogress 300 ./LEDDriver.sv 
+# -- Compiling module LEDDriver
+# -- Compiling module LEDDriver_Test
+# -- Compiling module LEDDriver_TestPhysical
+# 
+# Top level modules:
+# 	LEDDriver_Test
+# 	LEDDriver_TestPhysical
+# End time: 13:50:11 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:50:15 on Nov 27,2024, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work gravity_tb 
+# Start time: 13:50:15 on Nov 27,2024
+# Loading sv_std.std
+# Loading work.gravity_tb
+# Loading work.gravity
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./gravity_tb.sv(24)
+#    Time: 200150 ps  Iteration: 1  Instance: /gravity_tb
+# Break in Module gravity_tb at ./gravity_tb.sv line 24
+do gravrunlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:52:39 on Nov 27,2024
+# vlog -reportprogress 300 ./bird.sv 
+# -- Compiling module bird
+# 
+# Top level modules:
+# 	bird
+# End time: 13:52:39 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:52:39 on Nov 27,2024
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 13:52:39 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:52:39 on Nov 27,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:52:39 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:52:39 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity.sv 
+# -- Compiling module gravity
+# 
+# Top level modules:
+# 	gravity
+# End time: 13:52:39 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:52:39 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity_tb.sv 
+# -- Compiling module gravity_tb
+# 
+# Top level modules:
+# 	gravity_tb
+# End time: 13:52:39 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:52:39 on Nov 27,2024
+# vlog -reportprogress 300 ./LED_test.sv 
+# -- Compiling module LED_test
+# -- Compiling module LED_test_testbench
+# 
+# Top level modules:
+# 	LED_test_testbench
+# End time: 13:52:39 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:52:39 on Nov 27,2024
+# vlog -reportprogress 300 ./LEDDriver.sv 
+# -- Compiling module LEDDriver
+# -- Compiling module LEDDriver_Test
+# -- Compiling module LEDDriver_TestPhysical
+# 
+# Top level modules:
+# 	LEDDriver_Test
+# 	LEDDriver_TestPhysical
+# End time: 13:52:39 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:52:42 on Nov 27,2024, Elapsed time: 0:02:27
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work gravity_tb 
+# Start time: 13:52:42 on Nov 27,2024
+# Loading sv_std.std
+# Loading work.gravity_tb
+# Loading work.gravity
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./gravity_tb.sv(26)
+#    Time: 200350 ps  Iteration: 1  Instance: /gravity_tb
+# Break in Module gravity_tb at ./gravity_tb.sv line 26
+do gravrunlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:56:17 on Nov 27,2024
+# vlog -reportprogress 300 ./bird.sv 
+# -- Compiling module bird
+# 
+# Top level modules:
+# 	bird
+# End time: 13:56:17 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:56:17 on Nov 27,2024
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 13:56:17 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:56:17 on Nov 27,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:56:17 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:56:17 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity.sv 
+# -- Compiling module gravity
+# 
+# Top level modules:
+# 	gravity
+# End time: 13:56:17 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:56:17 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity_tb.sv 
+# -- Compiling module gravity_tb
+# 
+# Top level modules:
+# 	gravity_tb
+# End time: 13:56:17 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:56:17 on Nov 27,2024
+# vlog -reportprogress 300 ./LED_test.sv 
+# -- Compiling module LED_test
+# -- Compiling module LED_test_testbench
+# 
+# Top level modules:
+# 	LED_test_testbench
+# End time: 13:56:17 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:56:17 on Nov 27,2024
+# vlog -reportprogress 300 ./LEDDriver.sv 
+# -- Compiling module LEDDriver
+# -- Compiling module LEDDriver_Test
+# -- Compiling module LEDDriver_TestPhysical
+# 
+# Top level modules:
+# 	LEDDriver_Test
+# 	LEDDriver_TestPhysical
+# End time: 13:56:17 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:56:21 on Nov 27,2024, Elapsed time: 0:03:39
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work gravity_tb 
+# Start time: 13:56:21 on Nov 27,2024
+# Loading sv_std.std
+# Loading work.gravity_tb
+# Loading work.gravity
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./gravity_tb.sv(26)
+#    Time: 200350 ps  Iteration: 1  Instance: /gravity_tb
+# Break in Module gravity_tb at ./gravity_tb.sv line 26
+do gravrunlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:50 on Nov 27,2024
+# vlog -reportprogress 300 ./bird.sv 
+# -- Compiling module bird
+# 
+# Top level modules:
+# 	bird
+# End time: 13:57:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:50 on Nov 27,2024
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 13:57:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:50 on Nov 27,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 13:57:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:50 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity.sv 
+# -- Compiling module gravity
+# 
+# Top level modules:
+# 	gravity
+# End time: 13:57:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:50 on Nov 27,2024
+# vlog -reportprogress 300 ./gravity_tb.sv 
+# -- Compiling module gravity_tb
+# 
+# Top level modules:
+# 	gravity_tb
+# End time: 13:57:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:50 on Nov 27,2024
+# vlog -reportprogress 300 ./LED_test.sv 
+# -- Compiling module LED_test
+# -- Compiling module LED_test_testbench
+# 
+# Top level modules:
+# 	LED_test_testbench
+# End time: 13:57:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:50 on Nov 27,2024
+# vlog -reportprogress 300 ./LEDDriver.sv 
+# -- Compiling module LEDDriver
+# -- Compiling module LEDDriver_Test
+# -- Compiling module LEDDriver_TestPhysical
+# 
+# Top level modules:
+# 	LEDDriver_Test
+# 	LEDDriver_TestPhysical
+# End time: 13:57:50 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:57:54 on Nov 27,2024, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work gravity_tb 
+# Start time: 13:57:54 on Nov 27,2024
+# Loading sv_std.std
+# Loading work.gravity_tb
+# Loading work.gravity
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./gravity_tb.sv(26)
+#    Time: 200350 ps  Iteration: 1  Instance: /gravity_tb
+# Break in Module gravity_tb at ./gravity_tb.sv line 26
+# WARNING: No extended dataflow license exists

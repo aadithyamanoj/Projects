@@ -1,0 +1,246 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Aadit/Downloads/Lab1_files_Q17 (8)
+vbird
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1732744670
+!i10b 1
+!s100 Dm3Y`TClk1oeL2aG7k4oa1
+In:0beK;dSDmeFmaeC6O<V1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 bird_sv_unit
+S1
+R0
+w1732742001
+8./bird.sv
+F./bird.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1732744670.000000
+!s107 ./bird.sv|
+!s90 -reportprogress|300|./bird.sv|
+!i113 1
+Z6 tCvgOpt 0
+vclock_divider
+R1
+R2
+!i10b 1
+!s100 ;;cR1iFKl;SYA5AjF[83c3
+Ic]7KP2VdgN8VCEKP[BMEA0
+R3
+!s105 clock_divider_sv_unit
+S1
+R0
+Z7 w1732590917
+8./clock_divider.sv
+F./clock_divider.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./clock_divider.sv|
+!s90 -reportprogress|300|./clock_divider.sv|
+!i113 1
+R6
+vDE1_SoC
+R1
+R2
+!i10b 1
+!s100 9X4iDFVf=NT0XC^J9i@nR0
+I12g_Rk`BaK^i>mnHZ0ldG1
+R3
+!s105 DE1_SoC_sv_unit
+S1
+R0
+w1732590918
+8./DE1_SoC.sv
+F./DE1_SoC.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./DE1_SoC.sv|
+!s90 -reportprogress|300|./DE1_SoC.sv|
+!i113 1
+R6
+n@d@e1_@so@c
+vgravity
+R1
+R2
+!i10b 1
+!s100 iK3k9EnG9H75_?:>i^G]j1
+I24P<Kj5g6RM;6MP1ZkTJo1
+R3
+!s105 gravity_sv_unit
+S1
+R0
+w1732744631
+8./gravity.sv
+F./gravity.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./gravity.sv|
+!s90 -reportprogress|300|./gravity.sv|
+!i113 1
+R6
+vgravity_tb
+R1
+R2
+!i10b 1
+!s100 OeGJVH6bKG6Ib<1NcJ@410
+Iz@emKiYQZa1N8zMNK>4Ja0
+R3
+!s105 gravity_tb_sv_unit
+S1
+R0
+w1732744340
+8./gravity_tb.sv
+F./gravity_tb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./gravity_tb.sv|
+!s90 -reportprogress|300|./gravity_tb.sv|
+!i113 1
+R6
+vLED_test
+R1
+R2
+!i10b 1
+!s100 8QIj0zo4RJ:A<TTi`4[L`0
+IG7X;L94V<FXA25hIA:zPV1
+R3
+Z8 !s105 LED_test_sv_unit
+S1
+R0
+R7
+Z9 8./LED_test.sv
+Z10 F./LED_test.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+Z11 !s107 ./LED_test.sv|
+Z12 !s90 -reportprogress|300|./LED_test.sv|
+!i113 1
+R6
+n@l@e@d_test
+vLED_test_testbench
+R1
+R2
+!i10b 1
+!s100 H]j>6?glo;Tf:1ROoJ1zg3
+IO4mKNX6?0Z4@@AU0U46Ab0
+R3
+R8
+S1
+R0
+R7
+R9
+R10
+L0 60
+R4
+r1
+!s85 0
+31
+R5
+R11
+R12
+!i113 1
+R6
+n@l@e@d_test_testbench
+vLEDDriver
+R1
+R2
+!i10b 1
+!s100 JiAHBkK@6c_;:YN4[>j7<3
+ICW^9z;F45c1OgTmP7Ij6d3
+R3
+Z13 !s105 LEDDriver_sv_unit
+S1
+R0
+R7
+Z14 8./LEDDriver.sv
+Z15 F./LEDDriver.sv
+L0 13
+R4
+r1
+!s85 0
+31
+R5
+Z16 !s107 ./LEDDriver.sv|
+Z17 !s90 -reportprogress|300|./LEDDriver.sv|
+!i113 1
+R6
+n@l@e@d@driver
+vLEDDriver_Test
+R1
+R2
+!i10b 1
+!s100 7d5<0Kb7WnMbAASRRbV<P3
+I24z]WBdkFVd33ESQ4Ae<Y3
+R3
+R13
+S1
+R0
+R7
+R14
+R15
+L0 34
+R4
+r1
+!s85 0
+31
+R5
+R16
+R17
+!i113 1
+R6
+n@l@e@d@driver_@test
+vLEDDriver_TestPhysical
+R1
+R2
+!i10b 1
+!s100 WjU?EdQdFmD<AcS828m012
+ISWgN:gM:a;Zh2KTzI;7192
+R3
+R13
+S1
+R0
+R7
+R14
+R15
+L0 71
+R4
+r1
+!s85 0
+31
+R5
+R16
+R17
+!i113 1
+R6
+n@l@e@d@driver_@test@physical

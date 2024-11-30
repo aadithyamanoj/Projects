@@ -1,0 +1,30 @@
+module gravity(
+input logic clk, reset,
+output logic clkOut
+);
+
+logic [9:0] count;
+
+
+
+always_ff @(posedge clk) begin
+
+	if(reset) begin 
+		count <= 10'b0000000000;
+		clkOut <= 0;
+	end
+	else if(count == 10'b0000000000) begin
+		clkOut <= 1;
+		count <= count+1;
+	end
+	else begin 
+		clkOut <= 0;	
+		count <= count+1;
+	end	
+	
+	
+
+
+end
+
+endmodule 
