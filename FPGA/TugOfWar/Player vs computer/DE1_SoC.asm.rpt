@@ -1,5 +1,5 @@
 Assembler report for DE1_SoC
-Thu Nov 21 01:52:35 2024
+Fri Nov 29 17:35:55 2024
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Aadit/lab7/DE1_SoC.sof
+  5. Assembler Device Options: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/DE1_SoC.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Nov 21 01:52:35 2024 ;
+; Assembler Status      ; Successful - Fri Nov 29 17:35:55 2024 ;
 ; Revision Name         ; DE1_SoC                               ;
 ; Top-level Entity Name ; lab6                                  ;
 ; Family                ; Cyclone V                             ;
@@ -53,23 +53,23 @@ agreement for further details.
 +--------+---------+---------------+
 
 
-+---------------------------------+
-; Assembler Generated Files       ;
-+---------------------------------+
-; File Name                       ;
-+---------------------------------+
-; C:/Users/Aadit/lab7/DE1_SoC.sof ;
-+---------------------------------+
++------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                      ;
++------------------------------------------------------------------------------------------------+
+; File Name                                                                                      ;
++------------------------------------------------------------------------------------------------+
+; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/DE1_SoC.sof ;
++------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------+
-; Assembler Device Options: C:/Users/Aadit/lab7/DE1_SoC.sof ;
-+----------------+------------------------------------------+
-; Option         ; Setting                                  ;
-+----------------+------------------------------------------+
-; JTAG usercode  ; 0x00B0C868                               ;
-; Checksum       ; 0x00B0C868                               ;
-+----------------+------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/DE1_SoC.sof ;
++----------------+---------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                 ;
++----------------+---------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00B0C868                                                                                              ;
+; Checksum       ; 0x00B0C868                                                                                              ;
++----------------+---------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +78,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Nov 21 01:52:27 2024
+    Info: Processing started: Fri Nov 29 17:35:49 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DE1_SoC -c DE1_SoC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4834 megabytes
-    Info: Processing ended: Thu Nov 21 01:52:35 2024
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4830 megabytes
+    Info: Processing ended: Fri Nov 29 17:35:55 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:01
 
 

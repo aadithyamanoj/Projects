@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Thu Nov 21 01:51:43 2024
+Fri Nov 29 17:34:50 2024
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 21 01:51:42 2024       ;
+; Analysis & Synthesis Status     ; Successful - Fri Nov 29 17:34:50 2024       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
 ; Top-level Entity Name           ; lab6                                        ;
@@ -176,42 +176,41 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 22          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                             ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path         ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------+---------+
-; centerLight.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/centerLight.sv   ;         ;
-; clock_divider.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/clock_divider.sv ;         ;
-; game.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/game.sv          ;         ;
-; input.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/input.sv         ;         ;
-; lab6.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/lab6.sv          ;         ;
-; lights.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/lights.sv        ;         ;
-; normalLight.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/normalLight.sv   ;         ;
-; pulse.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/pulse.sv         ;         ;
-; synch.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/synch.sv         ;         ;
-; victory.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/victory.sv       ;         ;
-; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/adder.sv         ;         ;
-; adder3Bit.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/adder3Bit.sv     ;         ;
-; counter.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/counter.sv       ;         ;
-; disp.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/disp.sv          ;         ;
-; LFSR.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/LFSR.sv          ;         ;
-; cyberPlayer.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/cyberPlayer.sv   ;         ;
-; adder9Bit.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/lab7/adder9Bit.sv     ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                        ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------+---------+
+; centerLight.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/centerLight.sv   ;         ;
+; clock_divider.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/clock_divider.sv ;         ;
+; game.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/game.sv          ;         ;
+; input.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/input.sv         ;         ;
+; lab6.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv          ;         ;
+; lights.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lights.sv        ;         ;
+; normalLight.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/normalLight.sv   ;         ;
+; pulse.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/pulse.sv         ;         ;
+; synch.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/synch.sv         ;         ;
+; victory.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/victory.sv       ;         ;
+; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/adder.sv         ;         ;
+; adder3Bit.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/adder3Bit.sv     ;         ;
+; counter.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/counter.sv       ;         ;
+; disp.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/disp.sv          ;         ;
+; LFSR.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/LFSR.sv          ;         ;
+; cyberPlayer.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/cyberPlayer.sv   ;         ;
+; adder9Bit.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/adder9Bit.sv     ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------------+
@@ -534,7 +533,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -544,144 +543,144 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Nov 21 01:51:31 2024
+    Info: Processing started: Fri Nov 29 17:34:36 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file centerlight.sv
-    Info (12023): Found entity 1: centerLight File: C:/Users/Aadit/lab7/centerLight.sv Line: 1
+    Info (12023): Found entity 1: centerLight File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/centerLight.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file centerlight_tb.sv
-    Info (12023): Found entity 1: centerLight_tb File: C:/Users/Aadit/lab7/centerLight_tb.sv Line: 1
+    Info (12023): Found entity 1: centerLight_tb File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/centerLight_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clock_divider.sv
-    Info (12023): Found entity 1: clock_divider File: C:/Users/Aadit/lab7/clock_divider.sv Line: 3
+    Info (12023): Found entity 1: clock_divider File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/clock_divider.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file game.sv
-    Info (12023): Found entity 1: game File: C:/Users/Aadit/lab7/game.sv Line: 1
+    Info (12023): Found entity 1: game File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/game.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file game_tb.sv
-    Info (12023): Found entity 1: game_tb File: C:/Users/Aadit/lab7/game_tb.sv Line: 2
+    Info (12023): Found entity 1: game_tb File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/game_tb.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file input.sv
-    Info (12023): Found entity 1: keys File: C:/Users/Aadit/lab7/input.sv Line: 1
+    Info (12023): Found entity 1: keys File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/input.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file input_tb.sv
-    Info (12023): Found entity 1: input_tb File: C:/Users/Aadit/lab7/input_tb.sv Line: 1
+    Info (12023): Found entity 1: input_tb File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/input_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lab6.sv
-    Info (12023): Found entity 1: lab6 File: C:/Users/Aadit/lab7/lab6.sv Line: 1
+    Info (12023): Found entity 1: lab6 File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lights.sv
-    Info (12023): Found entity 1: lights File: C:/Users/Aadit/lab7/lights.sv Line: 1
+    Info (12023): Found entity 1: lights File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lights.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lights_tb.sv
-    Info (12023): Found entity 1: lights_tb File: C:/Users/Aadit/lab7/lights_tb.sv Line: 1
+    Info (12023): Found entity 1: lights_tb File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lights_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file normallight.sv
-    Info (12023): Found entity 1: normalLight File: C:/Users/Aadit/lab7/normalLight.sv Line: 1
+    Info (12023): Found entity 1: normalLight File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/normalLight.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file normallight_tb.sv
-    Info (12023): Found entity 1: normalLight_tb File: C:/Users/Aadit/lab7/normalLight_tb.sv Line: 1
+    Info (12023): Found entity 1: normalLight_tb File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/normalLight_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pulse.sv
-    Info (12023): Found entity 1: pulse File: C:/Users/Aadit/lab7/pulse.sv Line: 1
+    Info (12023): Found entity 1: pulse File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/pulse.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file synch.sv
-    Info (12023): Found entity 1: synch File: C:/Users/Aadit/lab7/synch.sv Line: 1
+    Info (12023): Found entity 1: synch File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/synch.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file victory.sv
-    Info (12023): Found entity 1: victory File: C:/Users/Aadit/lab7/victory.sv Line: 1
+    Info (12023): Found entity 1: victory File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/victory.sv Line: 1
 Info (12021): Found 0 design units, including 0 entities, in source file victory_tb.sv
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: adder File: C:/Users/Aadit/lab7/adder.sv Line: 1
+    Info (12023): Found entity 1: adder File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder3bit.sv
-    Info (12023): Found entity 1: adder3Bit File: C:/Users/Aadit/lab7/adder3Bit.sv Line: 1
+    Info (12023): Found entity 1: adder3Bit File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/adder3Bit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
-    Info (12023): Found entity 1: counter File: C:/Users/Aadit/lab7/counter.sv Line: 1
+    Info (12023): Found entity 1: counter File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/counter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file disp.sv
-    Info (12023): Found entity 1: disp File: C:/Users/Aadit/lab7/disp.sv Line: 1
+    Info (12023): Found entity 1: disp File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/disp.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lfsr.sv
-    Info (12023): Found entity 1: LFSR File: C:/Users/Aadit/lab7/LFSR.sv Line: 1
+    Info (12023): Found entity 1: LFSR File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/LFSR.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cyberplayer.sv
-    Info (12023): Found entity 1: cyberPlayer File: C:/Users/Aadit/lab7/cyberPlayer.sv Line: 1
+    Info (12023): Found entity 1: cyberPlayer File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/cyberPlayer.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder_tb.sv
-    Info (12023): Found entity 1: adder_tb File: C:/Users/Aadit/lab7/adder_tb.sv Line: 1
+    Info (12023): Found entity 1: adder_tb File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/adder_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder3bit_tb.sv
-    Info (12023): Found entity 1: adder3Bit_tb File: C:/Users/Aadit/lab7/adder3Bit_tb.sv Line: 1
+    Info (12023): Found entity 1: adder3Bit_tb File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/adder3Bit_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lfsr_tb.sv
-    Info (12023): Found entity 1: LFSR_tb File: C:/Users/Aadit/lab7/LFSR_tb.sv Line: 1
+    Info (12023): Found entity 1: LFSR_tb File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/LFSR_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cyberplayer_tb.sv
-    Info (12023): Found entity 1: cyberPlayer_tb File: C:/Users/Aadit/lab7/cyberPlayer_tb.sv Line: 1
+    Info (12023): Found entity 1: cyberPlayer_tb File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/cyberPlayer_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counter_tb.sv
-    Info (12023): Found entity 1: counter_tb File: C:/Users/Aadit/lab7/counter_tb.sv Line: 1
+    Info (12023): Found entity 1: counter_tb File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/counter_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder9bit.sv
-    Info (12023): Found entity 1: adder9Bit File: C:/Users/Aadit/lab7/adder9Bit.sv Line: 1
+    Info (12023): Found entity 1: adder9Bit File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/adder9Bit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder9bit_tb.sv
-    Info (12023): Found entity 1: adder9Bit_tb File: C:/Users/Aadit/lab7/adder9Bit_tb.sv Line: 1
+    Info (12023): Found entity 1: adder9Bit_tb File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/adder9Bit_tb.sv Line: 1
 Info (12127): Elaborating entity "lab6" for the top level hierarchy
-Warning (10034): Output port "HEX1" at lab6.sv(7) has no driver File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-Warning (10034): Output port "HEX2" at lab6.sv(7) has no driver File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-Warning (10034): Output port "HEX3" at lab6.sv(7) has no driver File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-Warning (10034): Output port "HEX4" at lab6.sv(7) has no driver File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-Warning (10034): Output port "LEDR[0]" at lab6.sv(8) has no driver File: C:/Users/Aadit/lab7/lab6.sv Line: 8
-Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:cdiv" File: C:/Users/Aadit/lab7/lab6.sv Line: 15
-Info (12128): Elaborating entity "game" for hierarchy "game:play" File: C:/Users/Aadit/lab7/lab6.sv Line: 17
-Info (12128): Elaborating entity "cyberPlayer" for hierarchy "game:play|cyberPlayer:b1" File: C:/Users/Aadit/lab7/game.sv Line: 14
-Info (12128): Elaborating entity "LFSR" for hierarchy "game:play|cyberPlayer:b1|LFSR:num" File: C:/Users/Aadit/lab7/cyberPlayer.sv Line: 12
-Info (12128): Elaborating entity "adder9Bit" for hierarchy "game:play|cyberPlayer:b1|adder9Bit:add" File: C:/Users/Aadit/lab7/cyberPlayer.sv Line: 14
-Info (12128): Elaborating entity "adder" for hierarchy "game:play|cyberPlayer:b1|adder9Bit:add|adder:one" File: C:/Users/Aadit/lab7/adder9Bit.sv Line: 9
-Info (12128): Elaborating entity "keys" for hierarchy "game:play|keys:b2" File: C:/Users/Aadit/lab7/game.sv Line: 17
-Info (12128): Elaborating entity "synch" for hierarchy "game:play|keys:b2|synch:s" File: C:/Users/Aadit/lab7/input.sv Line: 8
-Info (12128): Elaborating entity "pulse" for hierarchy "game:play|keys:b2|pulse:p" File: C:/Users/Aadit/lab7/input.sv Line: 9
-Info (12128): Elaborating entity "lights" for hierarchy "game:play|lights:all" File: C:/Users/Aadit/lab7/game.sv Line: 19
-Info (12128): Elaborating entity "normalLight" for hierarchy "game:play|lights:all|normalLight:n1" File: C:/Users/Aadit/lab7/lights.sv Line: 7
-Info (12128): Elaborating entity "centerLight" for hierarchy "game:play|lights:all|centerLight:n5" File: C:/Users/Aadit/lab7/lights.sv Line: 11
-Info (12128): Elaborating entity "victory" for hierarchy "game:play|victory:win" File: C:/Users/Aadit/lab7/game.sv Line: 21
-Info (12128): Elaborating entity "counter" for hierarchy "game:play|counter:L" File: C:/Users/Aadit/lab7/game.sv Line: 23
-Info (12128): Elaborating entity "adder3Bit" for hierarchy "game:play|counter:L|adder3Bit:add" File: C:/Users/Aadit/lab7/counter.sv Line: 11
-Info (12128): Elaborating entity "disp" for hierarchy "game:play|disp:Left" File: C:/Users/Aadit/lab7/game.sv Line: 26
-Warning (12020): Port "ordered port 2" on the entity instantiation of "one" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: C:/Users/Aadit/lab7/adder3Bit.sv Line: 8
+Warning (10034): Output port "HEX1" at lab6.sv(7) has no driver File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+Warning (10034): Output port "HEX2" at lab6.sv(7) has no driver File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+Warning (10034): Output port "HEX3" at lab6.sv(7) has no driver File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+Warning (10034): Output port "HEX4" at lab6.sv(7) has no driver File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+Warning (10034): Output port "LEDR[0]" at lab6.sv(8) has no driver File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 8
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:cdiv" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 15
+Info (12128): Elaborating entity "game" for hierarchy "game:play" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 17
+Info (12128): Elaborating entity "cyberPlayer" for hierarchy "game:play|cyberPlayer:b1" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/game.sv Line: 14
+Info (12128): Elaborating entity "LFSR" for hierarchy "game:play|cyberPlayer:b1|LFSR:num" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/cyberPlayer.sv Line: 12
+Info (12128): Elaborating entity "adder9Bit" for hierarchy "game:play|cyberPlayer:b1|adder9Bit:add" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/cyberPlayer.sv Line: 14
+Info (12128): Elaborating entity "adder" for hierarchy "game:play|cyberPlayer:b1|adder9Bit:add|adder:one" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/adder9Bit.sv Line: 9
+Info (12128): Elaborating entity "keys" for hierarchy "game:play|keys:b2" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/game.sv Line: 17
+Info (12128): Elaborating entity "synch" for hierarchy "game:play|keys:b2|synch:s" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/input.sv Line: 8
+Info (12128): Elaborating entity "pulse" for hierarchy "game:play|keys:b2|pulse:p" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/input.sv Line: 9
+Info (12128): Elaborating entity "lights" for hierarchy "game:play|lights:all" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/game.sv Line: 19
+Info (12128): Elaborating entity "normalLight" for hierarchy "game:play|lights:all|normalLight:n1" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lights.sv Line: 7
+Info (12128): Elaborating entity "centerLight" for hierarchy "game:play|lights:all|centerLight:n5" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lights.sv Line: 11
+Info (12128): Elaborating entity "victory" for hierarchy "game:play|victory:win" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/game.sv Line: 21
+Info (12128): Elaborating entity "counter" for hierarchy "game:play|counter:L" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/game.sv Line: 23
+Info (12128): Elaborating entity "adder3Bit" for hierarchy "game:play|counter:L|adder3Bit:add" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/counter.sv Line: 11
+Info (12128): Elaborating entity "disp" for hierarchy "game:play|disp:Left" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/game.sv Line: 26
+Warning (12020): Port "ordered port 2" on the entity instantiation of "one" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/adder3Bit.sv Line: 8
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 7
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/Aadit/lab7/lab6.sv Line: 8
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 7
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 8
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 16 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/Aadit/lab7/DE1_SoC.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/DE1_SoC.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Aadit/lab7/lab6.sv Line: 9
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Aadit/lab7/lab6.sv Line: 9
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Aadit/lab7/lab6.sv Line: 9
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 9
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 9
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/lab6.sv Line: 9
 Info (21057): Implemented 143 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
     Info (21061): Implemented 76 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 42 warnings
-    Info: Peak virtual memory: 4831 megabytes
-    Info: Processing ended: Thu Nov 21 01:51:43 2024
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Peak virtual memory: 4904 megabytes
+    Info: Processing ended: Fri Nov 29 17:34:50 2024
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Aadit/lab7/DE1_SoC.map.smsg.
+The suppressed messages can be found in C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/DE1_SoC.map.smsg.
 
 

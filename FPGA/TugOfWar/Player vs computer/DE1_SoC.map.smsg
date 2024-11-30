@@ -1,2 +1,2 @@
-Info (10281): Verilog HDL Declaration information at game.sv(10): object "left" differs only in case from object "Left" in the same scope File: C:/Users/Aadit/lab7/game.sv Line: 10
-Info (10281): Verilog HDL Declaration information at game.sv(10): object "right" differs only in case from object "Right" in the same scope File: C:/Users/Aadit/lab7/game.sv Line: 10
+Info (10281): Verilog HDL Declaration information at game.sv(10): object "left" differs only in case from object "Left" in the same scope File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/game.sv Line: 10
+Info (10281): Verilog HDL Declaration information at game.sv(10): object "right" differs only in case from object "Right" in the same scope File: C:/Users/Aadit/OneDrive/Documents/GitHub/Projects/FPGA/TugOfWar/Player vs computer/game.sv Line: 10
