@@ -1,0 +1,67 @@
+module scoreLights_tb();
+	
+input clk, reset, gameover,
+input [9:0] score,
+output [6:0] hex0, hex1, hex2
+
+
+
+
+
+
+ 
+  parameter CLOCK_PERIOD=100;
+  initial begin
+    clk <= 0;
+    forever #(CLOCK_PERIOD/2) clk <= ~clk;
+  end
+
+  
+  initial begin 
+		reset = 1; gameover = 0; score = 9'd0; @(posedge clk)
+		reset = 0; gameover = 0; score = 9'd100; @(posedge clk)
+		reset = 0; gameover = 0; score = 9'd123; @(posedge clk)
+		reset = 0; gameover = 0; score = 9'd576; @(posedge clk)
+		reset = 0; gameover = 0; score = 9'd999; @(posedge clk)
+		reset = 0; gameover = 0; score = 9'd1000; @(posedge clk)
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	end
+
+
+
+
+
+
+
+
+
+
+
+
+
+endmodule 

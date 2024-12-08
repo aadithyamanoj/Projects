@@ -1,0 +1,17 @@
+module FlappyBird(
+input clk, reset, 
+);
+
+	logic gravClk, pClk;
+	logic tap;
+	
+	
+	 
+	 gravity grav(.clk(CLOCK_50), .reset(~KEY[0]), .clkOut(gravClk));
+	 pipeClk pSynch(.clk(CLOCK_50), .reset(~KEY[0]), .clkOut(pClk));
+	 keyIn in(.clk(CLOCK_50), .reset(KEY[0]), .key(KEY[3]), .keyOut(tap));
+	 
+	 
+	 
+	 
+endmodule 

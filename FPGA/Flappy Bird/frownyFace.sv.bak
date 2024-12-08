@@ -1,0 +1,32 @@
+module frownyFace(
+
+input logic clk, reset, gameover
+output logic [15:0][15:0]GrnPixels;
+);
+
+
+
+always_ff @(posedge clk) begin
+
+	if(reset) begin
+		GrnPixels<=0;
+	end
+	
+	else if(gameover) begin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end

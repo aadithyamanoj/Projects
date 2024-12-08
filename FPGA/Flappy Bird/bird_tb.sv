@@ -1,5 +1,5 @@
 module bird_tb();
-	logic clk, clkG, reset, key;
+	logic clk, clkG, reset, key, gameover;
 	logic [15:0] lights;
 	
 	
@@ -13,8 +13,17 @@ module bird_tb();
 
 
 	initial begin
-		reset = 0; key = 0; @(posedge clk);
-		reset = 0; key = 0; @(posedge clk);
+		reset = 1; key = 0; gameover = 0; clkG = 0; @(posedge clk);
+		reset = 0; key = 0; gameover = 0; @(posedge clk);
+								  gameover = 1; @(posedge clk);
+		reset = 1;						  gameover = 0; @(posedge clk);
+		reset = 0;			  key = 1; 					 @(posedge clk);
+					  repeat(10)          @(posedge clk);
+					  key = 0; clkG = 1; 	 @(posedge clk);
+					  repeat(35)				 @(posedge clk);
+					    
+		
+		
 	
 	
 	

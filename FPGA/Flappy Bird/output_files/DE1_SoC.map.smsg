@@ -1,2 +1,8 @@
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Warning (10034): Output port "LEDR" at DE1_SoC.sv(4) has no driver File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/DE1_SoC.sv Line: 4
+Warning (10268): Verilog HDL information at bird.sv(17): always construct contains both blocking and non-blocking assignments File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/bird.sv Line: 17
+Warning (10034): Output port "HEX3" at FlappyBird.sv(3) has no driver File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 3
+Warning (10034): Output port "HEX4" at FlappyBird.sv(3) has no driver File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 3
+Warning (10034): Output port "HEX5" at FlappyBird.sv(3) has no driver File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 3
+Warning (10034): Output port "LEDR" at FlappyBird.sv(4) has no driver File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 4
+Warning (10034): Output port "RedPixels[15..14]" at FlappyBird.sv(7) has no driver File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 7
+Warning (10034): Output port "RedPixels[12..0]" at FlappyBird.sv(7) has no driver File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 7

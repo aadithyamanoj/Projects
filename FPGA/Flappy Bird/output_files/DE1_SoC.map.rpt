@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Wed Nov 27 13:57:22 2024
+Sat Dec 07 08:08:49 2024
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -17,12 +17,19 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
  11. Parameter Settings for User Entity Instance: LEDDriver:Driver
- 12. Port Connectivity Checks: "LEDDriver:Driver"
- 13. Port Connectivity Checks: "clock_divider:divider"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
- 17. Analysis & Synthesis Suppressed Messages
+ 12. Parameter Settings for Inferred Entity Instance: FlappyBird:game|scoreLights:lights|lpm_divide:Mod0
+ 13. Parameter Settings for Inferred Entity Instance: FlappyBird:game|scoreLights:lights|lpm_divide:Div0
+ 14. Parameter Settings for Inferred Entity Instance: FlappyBird:game|scoreLights:lights|lpm_divide:Mod1
+ 15. Parameter Settings for Inferred Entity Instance: FlappyBird:game|scoreLights:lights|lpm_divide:Div1
+ 16. Parameter Settings for Inferred Entity Instance: FlappyBird:game|scoreLights:lights|lpm_divide:Mod2
+ 17. Port Connectivity Checks: "FlappyBird:game|allPipes:obstacle|shifter:s15"
+ 18. Port Connectivity Checks: "FlappyBird:game|allPipes:obstacle|shifterRight:s0"
+ 19. Port Connectivity Checks: "LEDDriver:Driver"
+ 20. Port Connectivity Checks: "clock_divider:divider"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+ 24. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -49,13 +56,13 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov 27 13:57:22 2024       ;
+; Analysis & Synthesis Status     ; Successful - Sat Dec 07 08:08:49 2024       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
 ; Top-level Entity Name           ; DE1_SoC                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 19                                          ;
+; Total registers                 ; 357                                         ;
 ; Total pins                      ; 103                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -161,77 +168,162 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 22          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                 ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
-; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/DE1_SoC.sv       ;         ;
-; clock_divider.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/clock_divider.sv ;         ;
-; LED_test.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/LED_test.sv      ;         ;
-; LEDDriver.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/LEDDriver.sv     ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; DE1_SoC.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/DE1_SoC.sv                 ;         ;
+; clock_divider.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/clock_divider.sv           ;         ;
+; LEDDriver.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/LEDDriver.sv               ;         ;
+; bird.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/bird.sv                    ;         ;
+; gravity.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/gravity.sv                 ;         ;
+; pipeGen.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pipeGen.sv                 ;         ;
+; shifter.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/shifter.sv                 ;         ;
+; randLFSR.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/randLFSR.sv                ;         ;
+; allpipes.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/allpipes.sv                ;         ;
+; shifterRight.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/shifterRight.sv            ;         ;
+; pipeClk.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pipeClk.sv                 ;         ;
+; collision.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/collision.sv               ;         ;
+; synch.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/synch.sv                   ;         ;
+; pulse.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pulse.sv                   ;         ;
+; input.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/input.sv                   ;         ;
+; scoreLights.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv             ;         ;
+; FlappyBird.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv              ;         ;
+; pipeGclk.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pipeGclk.sv                ;         ;
+; frownyFace.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/frownyFace.sv              ;         ;
+; outputMux.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/outputMux.sv               ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal170.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc      ;         ;
+; db/lpm_divide_h3m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/lpm_divide_h3m.tdf      ;         ;
+; db/sign_div_unsign_klh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/sign_div_unsign_klh.tdf ;         ;
+; db/alt_u_div_eve.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/alt_u_div_eve.tdf       ;         ;
+; db/lpm_divide_ebm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/lpm_divide_ebm.tdf      ;         ;
+; db/lpm_divide_hbm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/lpm_divide_hbm.tdf      ;         ;
+; db/sign_div_unsign_nlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/sign_div_unsign_nlh.tdf ;         ;
+; db/alt_u_div_kve.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/alt_u_div_kve.tdf       ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                               ;
-+---------------------------------------------+-----------------------------+
-; Resource                                    ; Usage                       ;
-+---------------------------------------------+-----------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 18                          ;
-;                                             ;                             ;
-; Combinational ALUT usage for logic          ; 36                          ;
-;     -- 7 input functions                    ; 0                           ;
-;     -- 6 input functions                    ; 0                           ;
-;     -- 5 input functions                    ; 14                          ;
-;     -- 4 input functions                    ; 4                           ;
-;     -- <=3 input functions                  ; 18                          ;
-;                                             ;                             ;
-; Dedicated logic registers                   ; 19                          ;
-;                                             ;                             ;
-; I/O pins                                    ; 103                         ;
-;                                             ;                             ;
-; Total DSP Blocks                            ; 0                           ;
-;                                             ;                             ;
-; Maximum fan-out node                        ; LEDDriver:Driver|Counter[0] ;
-; Maximum fan-out                             ; 21                          ;
-; Total fan-out                               ; 298                         ;
-; Average fan-out                             ; 1.14                        ;
-+---------------------------------------------+-----------------------------+
++----------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                            ;
++---------------------------------------------+------------------------------------------+
+; Resource                                    ; Usage                                    ;
++---------------------------------------------+------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 429                                      ;
+;                                             ;                                          ;
+; Combinational ALUT usage for logic          ; 670                                      ;
+;     -- 7 input functions                    ; 4                                        ;
+;     -- 6 input functions                    ; 133                                      ;
+;     -- 5 input functions                    ; 112                                      ;
+;     -- 4 input functions                    ; 74                                       ;
+;     -- <=3 input functions                  ; 347                                      ;
+;                                             ;                                          ;
+; Dedicated logic registers                   ; 357                                      ;
+;                                             ;                                          ;
+; I/O pins                                    ; 103                                      ;
+;                                             ;                                          ;
+; Total DSP Blocks                            ; 0                                        ;
+;                                             ;                                          ;
+; Maximum fan-out node                        ; clock_divider:divider|divided_clocks[14] ;
+; Maximum fan-out                             ; 343                                      ;
+; Total fan-out                               ; 4023                                     ;
+; Average fan-out                             ; 3.26                                     ;
++---------------------------------------------+------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                 ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name   ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+---------------+--------------+
-; |DE1_SoC                   ; 36 (0)              ; 19 (0)                    ; 0                 ; 0          ; 103  ; 0            ; |DE1_SoC                       ; DE1_SoC       ; work         ;
-;    |LEDDriver:Driver|      ; 21 (21)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|LEDDriver:Driver      ; LEDDriver     ; work         ;
-;    |clock_divider:divider| ; 15 (15)             ; 15 (15)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|clock_divider:divider ; clock_divider ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+---------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                      ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                         ; Entity Name         ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |DE1_SoC                                     ; 670 (2)             ; 357 (0)                   ; 0                 ; 0          ; 103  ; 0            ; |DE1_SoC                                                                                                                                    ; DE1_SoC             ; work         ;
+;    |FlappyBird:game|                         ; 521 (0)             ; 338 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game                                                                                                                    ; FlappyBird          ; work         ;
+;       |allPipes:obstacle|                    ; 113 (0)             ; 256 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle                                                                                                  ; allPipes            ; work         ;
+;          |shifter:s10|                       ; 6 (6)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s10                                                                                      ; shifter             ; work         ;
+;          |shifter:s11|                       ; 6 (6)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s11                                                                                      ; shifter             ; work         ;
+;          |shifter:s12|                       ; 6 (6)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s12                                                                                      ; shifter             ; work         ;
+;          |shifter:s13|                       ; 6 (6)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s13                                                                                      ; shifter             ; work         ;
+;          |shifter:s14|                       ; 10 (10)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s14                                                                                      ; shifter             ; work         ;
+;          |shifter:s15|                       ; 6 (6)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s15                                                                                      ; shifter             ; work         ;
+;          |shifter:s1|                        ; 6 (6)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s1                                                                                       ; shifter             ; work         ;
+;          |shifter:s2|                        ; 7 (7)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s2                                                                                       ; shifter             ; work         ;
+;          |shifter:s3|                        ; 6 (6)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s3                                                                                       ; shifter             ; work         ;
+;          |shifter:s4|                        ; 6 (6)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s4                                                                                       ; shifter             ; work         ;
+;          |shifter:s5|                        ; 6 (6)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s5                                                                                       ; shifter             ; work         ;
+;          |shifter:s6|                        ; 6 (6)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s6                                                                                       ; shifter             ; work         ;
+;          |shifter:s7|                        ; 6 (6)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s7                                                                                       ; shifter             ; work         ;
+;          |shifter:s8|                        ; 6 (6)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s8                                                                                       ; shifter             ; work         ;
+;          |shifter:s9|                        ; 6 (6)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s9                                                                                       ; shifter             ; work         ;
+;          |shifterRight:s0|                   ; 18 (18)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifterRight:s0                                                                                  ; shifterRight        ; work         ;
+;       |bird:flapper|                         ; 14 (14)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|bird:flapper                                                                                                       ; bird                ; work         ;
+;       |collision:winOrLose|                  ; 27 (27)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|collision:winOrLose                                                                                                ; collision           ; work         ;
+;       |gravity:grav|                         ; 11 (11)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|gravity:grav                                                                                                       ; gravity             ; work         ;
+;       |keyIn:in|                             ; 1 (0)               ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|keyIn:in                                                                                                           ; keyIn               ; work         ;
+;          |pulse:p|                           ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|keyIn:in|pulse:p                                                                                                   ; pulse               ; work         ;
+;          |synch:s|                           ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|keyIn:in|synch:s                                                                                                   ; synch               ; work         ;
+;       |pipeGclk:pgen|                        ; 15 (15)             ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|pipeGclk:pgen                                                                                                      ; pipeGclk            ; work         ;
+;       |randLFSR:newHole|                     ; 6 (6)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|randLFSR:newHole                                                                                                   ; randLFSR            ; work         ;
+;       |scoreLights:lights|                   ; 334 (41)            ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights                                                                                                 ; scoreLights         ; work         ;
+;          |lpm_divide:Div0|                   ; 71 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;             |lpm_divide_ebm:auto_generated|  ; 71 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Div0|lpm_divide_ebm:auto_generated                                                   ; lpm_divide_ebm      ; work         ;
+;                |sign_div_unsign_klh:divider| ; 71 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Div0|lpm_divide_ebm:auto_generated|sign_div_unsign_klh:divider                       ; sign_div_unsign_klh ; work         ;
+;                   |alt_u_div_eve:divider|    ; 71 (71)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Div0|lpm_divide_ebm:auto_generated|sign_div_unsign_klh:divider|alt_u_div_eve:divider ; alt_u_div_eve       ; work         ;
+;          |lpm_divide:Div1|                   ; 60 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Div1                                                                                 ; lpm_divide          ; work         ;
+;             |lpm_divide_hbm:auto_generated|  ; 60 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Div1|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
+;                |sign_div_unsign_nlh:divider| ; 60 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider                       ; sign_div_unsign_nlh ; work         ;
+;                   |alt_u_div_kve:divider|    ; 60 (60)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_kve:divider ; alt_u_div_kve       ; work         ;
+;          |lpm_divide:Mod0|                   ; 75 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;             |lpm_divide_h3m:auto_generated|  ; 75 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Mod0|lpm_divide_h3m:auto_generated                                                   ; lpm_divide_h3m      ; work         ;
+;                |sign_div_unsign_klh:divider| ; 75 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Mod0|lpm_divide_h3m:auto_generated|sign_div_unsign_klh:divider                       ; sign_div_unsign_klh ; work         ;
+;                   |alt_u_div_eve:divider|    ; 75 (75)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Mod0|lpm_divide_h3m:auto_generated|sign_div_unsign_klh:divider|alt_u_div_eve:divider ; alt_u_div_eve       ; work         ;
+;          |lpm_divide:Mod1|                   ; 60 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Mod1                                                                                 ; lpm_divide          ; work         ;
+;             |lpm_divide_h3m:auto_generated|  ; 60 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Mod1|lpm_divide_h3m:auto_generated                                                   ; lpm_divide_h3m      ; work         ;
+;                |sign_div_unsign_klh:divider| ; 60 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Mod1|lpm_divide_h3m:auto_generated|sign_div_unsign_klh:divider                       ; sign_div_unsign_klh ; work         ;
+;                   |alt_u_div_eve:divider|    ; 60 (60)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Mod1|lpm_divide_h3m:auto_generated|sign_div_unsign_klh:divider|alt_u_div_eve:divider ; alt_u_div_eve       ; work         ;
+;          |lpm_divide:Mod2|                   ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Mod2                                                                                 ; lpm_divide          ; work         ;
+;             |lpm_divide_h3m:auto_generated|  ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Mod2|lpm_divide_h3m:auto_generated                                                   ; lpm_divide_h3m      ; work         ;
+;                |sign_div_unsign_klh:divider| ; 27 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Mod2|lpm_divide_h3m:auto_generated|sign_div_unsign_klh:divider                       ; sign_div_unsign_klh ; work         ;
+;                   |alt_u_div_eve:divider|    ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|FlappyBird:game|scoreLights:lights|lpm_divide:Mod2|lpm_divide_h3m:auto_generated|sign_div_unsign_klh:divider|alt_u_div_eve:divider ; alt_u_div_eve       ; work         ;
+;    |LEDDriver:Driver|                        ; 132 (132)           ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|LEDDriver:Driver                                                                                                                   ; LEDDriver           ; work         ;
+;    |clock_divider:divider|                   ; 15 (15)             ; 15 (15)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC|clock_divider:divider                                                                                                              ; clock_divider       ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------+
-; Registers Removed During Synthesis                                ;
-+----------------------------------------------+--------------------+
-; Register name                                ; Reason for Removal ;
-+----------------------------------------------+--------------------+
-; clock_divider:divider|divided_clocks[15..31] ; Lost fanout        ;
-; Total Number of Removed Registers = 17       ;                    ;
-+----------------------------------------------+--------------------+
++--------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                               ;
++----------------------------------------------+---------------------------------------------------+
+; Register name                                ; Reason for Removal                                ;
++----------------------------------------------+---------------------------------------------------+
+; FlappyBird:game|pipeClk:pSynch|clkOut        ; Merged with FlappyBird:game|gravity:grav|clkOut   ;
+; FlappyBird:game|pipeClk:pSynch|count[8]      ; Merged with FlappyBird:game|gravity:grav|count[8] ;
+; FlappyBird:game|pipeClk:pSynch|count[7]      ; Merged with FlappyBird:game|gravity:grav|count[7] ;
+; FlappyBird:game|pipeClk:pSynch|count[6]      ; Merged with FlappyBird:game|gravity:grav|count[6] ;
+; FlappyBird:game|pipeClk:pSynch|count[5]      ; Merged with FlappyBird:game|gravity:grav|count[5] ;
+; FlappyBird:game|pipeClk:pSynch|count[4]      ; Merged with FlappyBird:game|gravity:grav|count[4] ;
+; FlappyBird:game|pipeClk:pSynch|count[3]      ; Merged with FlappyBird:game|gravity:grav|count[3] ;
+; FlappyBird:game|pipeClk:pSynch|count[2]      ; Merged with FlappyBird:game|gravity:grav|count[2] ;
+; FlappyBird:game|pipeClk:pSynch|count[1]      ; Merged with FlappyBird:game|gravity:grav|count[1] ;
+; FlappyBird:game|pipeClk:pSynch|count[0]      ; Merged with FlappyBird:game|gravity:grav|count[0] ;
+; clock_divider:divider|divided_clocks[15..31] ; Lost fanout                                       ;
+; Total Number of Removed Registers = 27       ;                                                   ;
++----------------------------------------------+---------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -239,24 +331,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 19    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Total registers                              ; 357   ;
+; Number of registers using Synchronous Clear  ; 331   ;
+; Number of registers using Synchronous Load   ; 16    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 300   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|LEDDriver:Driver|Mux29 ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DE1_SoC|LEDDriver:Driver|Mux26 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|collision:winOrLose|score[5]             ;
+; 4:1                ; 21 bits   ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|scoreLights:lights|hex1[1]               ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC|FlappyBird:game|randLFSR:newHole|random[3]               ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s15|curCol[9]  ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s13|curCol[2]  ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s14|curCol[12] ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s12|curCol[13] ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s11|curCol[4]  ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s10|curCol[1]  ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s9|curCol[1]   ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s8|curCol[6]   ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s7|curCol[12]  ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s6|curCol[8]   ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s5|curCol[10]  ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s4|curCol[5]   ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s3|curCol[4]   ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s2|curCol[4]   ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|allPipes:obstacle|shifter:s1|curCol[4]   ;
+; 7:1                ; 13 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |DE1_SoC|FlappyBird:game|bird:flapper|lights[14]                  ;
+; 31:1               ; 16 bits   ; 320 LEs       ; 320 LEs              ; 0 LEs                  ; No         ; |DE1_SoC|LEDDriver:Driver|Mux0                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------+
@@ -267,6 +377,140 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; FREQDIV        ; 0     ; Signed Integer                       ;
 +----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: FlappyBird:game|scoreLights:lights|lpm_divide:Mod0 ;
++------------------------+----------------+-----------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                      ;
++------------------------+----------------+-----------------------------------------------------------+
+; LPM_WIDTHN             ; 10             ; Untyped                                                   ;
+; LPM_WIDTHD             ; 4              ; Untyped                                                   ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                   ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                   ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                   ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                   ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                   ;
+; CBXI_PARAMETER         ; lpm_divide_h3m ; Untyped                                                   ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                   ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                   ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                              ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                            ;
++------------------------+----------------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: FlappyBird:game|scoreLights:lights|lpm_divide:Div0 ;
++------------------------+----------------+-----------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                      ;
++------------------------+----------------+-----------------------------------------------------------+
+; LPM_WIDTHN             ; 10             ; Untyped                                                   ;
+; LPM_WIDTHD             ; 4              ; Untyped                                                   ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                   ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                   ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                   ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                   ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                   ;
+; CBXI_PARAMETER         ; lpm_divide_ebm ; Untyped                                                   ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                   ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                   ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                              ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                            ;
++------------------------+----------------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: FlappyBird:game|scoreLights:lights|lpm_divide:Mod1 ;
++------------------------+----------------+-----------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                      ;
++------------------------+----------------+-----------------------------------------------------------+
+; LPM_WIDTHN             ; 10             ; Untyped                                                   ;
+; LPM_WIDTHD             ; 4              ; Untyped                                                   ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                   ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                   ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                   ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                   ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                   ;
+; CBXI_PARAMETER         ; lpm_divide_h3m ; Untyped                                                   ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                   ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                   ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                              ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                            ;
++------------------------+----------------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: FlappyBird:game|scoreLights:lights|lpm_divide:Div1 ;
++------------------------+----------------+-----------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                      ;
++------------------------+----------------+-----------------------------------------------------------+
+; LPM_WIDTHN             ; 10             ; Untyped                                                   ;
+; LPM_WIDTHD             ; 7              ; Untyped                                                   ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                   ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                   ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                   ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                   ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                   ;
+; CBXI_PARAMETER         ; lpm_divide_hbm ; Untyped                                                   ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                   ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                   ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                              ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                            ;
++------------------------+----------------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: FlappyBird:game|scoreLights:lights|lpm_divide:Mod2 ;
++------------------------+----------------+-----------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                      ;
++------------------------+----------------+-----------------------------------------------------------+
+; LPM_WIDTHN             ; 10             ; Untyped                                                   ;
+; LPM_WIDTHD             ; 4              ; Untyped                                                   ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                   ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                   ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                   ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                   ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                   ;
+; CBXI_PARAMETER         ; lpm_divide_h3m ; Untyped                                                   ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                   ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                   ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                              ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                            ;
++------------------------+----------------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "FlappyBird:game|allPipes:obstacle|shifter:s15" ;
++-----------------+-------+----------+--------------------------------------+
+; Port            ; Type  ; Severity ; Details                              ;
++-----------------+-------+----------+--------------------------------------+
+; pipeLeft[15..1] ; Input ; Info     ; Stuck at GND                         ;
+; pipeLeft[0]     ; Input ; Info     ; Stuck at VCC                         ;
++-----------------+-------+----------+--------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FlappyBird:game|allPipes:obstacle|shifterRight:s0" ;
++-----------+-------+----------+------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                        ;
++-----------+-------+----------+------------------------------------------------+
+; pipeRight ; Input ; Info     ; Stuck at GND                                   ;
++-----------+-------+----------+------------------------------------------------+
 
 
 +-----------------------------------------------+
@@ -293,23 +537,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 19                          ;
-;     plain             ; 19                          ;
-; arriav_lcell_comb     ; 38                          ;
-;     arith             ; 14                          ;
-;         1 data inputs ; 13                          ;
-;         2 data inputs ; 1                           ;
-;     normal            ; 24                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 4                           ;
-;         5 data inputs ; 14                          ;
+; arriav_ff             ; 357                         ;
+;     ENA SCLR          ; 287                         ;
+;     ENA SCLR SLD      ; 13                          ;
+;     SCLR              ; 30                          ;
+;     SCLR SLD          ; 1                           ;
+;     SLD               ; 2                           ;
+;     plain             ; 24                          ;
+; arriav_lcell_comb     ; 670                         ;
+;     arith             ; 208                         ;
+;         0 data inputs ; 44                          ;
+;         1 data inputs ; 66                          ;
+;         2 data inputs ; 14                          ;
+;         3 data inputs ; 63                          ;
+;         4 data inputs ; 21                          ;
+;     extend            ; 4                           ;
+;         7 data inputs ; 4                           ;
+;     normal            ; 430                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 88                          ;
+;         3 data inputs ; 40                          ;
+;         4 data inputs ; 53                          ;
+;         5 data inputs ; 112                         ;
+;         6 data inputs ; 133                         ;
+;     shared            ; 28                          ;
+;         0 data inputs ; 9                           ;
+;         1 data inputs ; 19                          ;
 ; boundary_port         ; 103                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.30                        ;
-; Average LUT depth     ; 1.46                        ;
+; Max LUT depth         ; 16.00                       ;
+; Average LUT depth     ; 6.68                        ;
 +-----------------------+-----------------------------+
 
 
@@ -318,7 +576,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -328,49 +586,172 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Nov 27 13:57:12 2024
+    Info: Processing started: Sat Dec 07 08:08:39 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file de1_soc.sv
-    Info (12023): Found entity 1: DE1_SoC File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/DE1_SoC.sv Line: 2
+    Info (12023): Found entity 1: DE1_SoC File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/DE1_SoC.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file clock_divider.sv
-    Info (12023): Found entity 1: clock_divider File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/clock_divider.sv Line: 3
+    Info (12023): Found entity 1: clock_divider File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/clock_divider.sv Line: 3
 Info (12021): Found 2 design units, including 2 entities, in source file led_test.sv
-    Info (12023): Found entity 1: LED_test File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/LED_test.sv Line: 1
-    Info (12023): Found entity 2: LED_test_testbench File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/LED_test.sv Line: 60
+    Info (12023): Found entity 1: LED_test File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/LED_test.sv Line: 1
+    Info (12023): Found entity 2: LED_test_testbench File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/LED_test.sv Line: 60
 Info (12021): Found 3 design units, including 3 entities, in source file leddriver.sv
-    Info (12023): Found entity 1: LEDDriver File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/LEDDriver.sv Line: 13
-    Info (12023): Found entity 2: LEDDriver_Test File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/LEDDriver.sv Line: 34
-    Info (12023): Found entity 3: LEDDriver_TestPhysical File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/LEDDriver.sv Line: 71
+    Info (12023): Found entity 1: LEDDriver File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/LEDDriver.sv Line: 13
+    Info (12023): Found entity 2: LEDDriver_Test File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/LEDDriver.sv Line: 34
+    Info (12023): Found entity 3: LEDDriver_TestPhysical File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/LEDDriver.sv Line: 71
 Info (12021): Found 1 design units, including 1 entities, in source file bird.sv
-    Info (12023): Found entity 1: bird File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/bird.sv Line: 1
+    Info (12023): Found entity 1: bird File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/bird.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file gravity.sv
-    Info (12023): Found entity 1: gravity File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/gravity.sv Line: 1
+    Info (12023): Found entity 1: gravity File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/gravity.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file gravity_tb.sv
-    Info (12023): Found entity 1: gravity_tb File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/gravity_tb.sv Line: 1
+    Info (12023): Found entity 1: gravity_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/gravity_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bird_tb.sv
+    Info (12023): Found entity 1: bird_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/bird_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pipegen.sv
+    Info (12023): Found entity 1: pipeGen File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pipeGen.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shifter.sv
+    Info (12023): Found entity 1: shifter File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/shifter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file randlfsr.sv
+    Info (12023): Found entity 1: randLFSR File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/randLFSR.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file allpipes.sv
+    Info (12023): Found entity 1: allPipes File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/allpipes.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shifterright.sv
+    Info (12023): Found entity 1: shifterRight File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/shifterRight.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pipeclk.sv
+    Info (12023): Found entity 1: pipeClk File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pipeClk.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file collision.sv
+    Info (12023): Found entity 1: collision File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/collision.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file synch.sv
+    Info (12023): Found entity 1: synch File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/synch.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pulse.sv
+    Info (12023): Found entity 1: pulse File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pulse.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file input.sv
+    Info (12023): Found entity 1: keyIn File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/input.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file scorelights.sv
+    Info (12023): Found entity 1: scoreLights File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flappybird.sv
+    Info (12023): Found entity 1: FlappyBird File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pipeclk_tb.sv
+    Info (12023): Found entity 1: pipeClk_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pipeClk_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file keyin_tb.sv
+    Info (12023): Found entity 1: keyIn_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/keyIn_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file randlfsr_tb.sv
+    Info (12023): Found entity 1: randLFSR_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/randLFSR_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pipegen_tb.sv
+    Info (12023): Found entity 1: pipeGen_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pipeGen_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file allpipes_tb.sv
+    Info (12023): Found entity 1: allPipes_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/allPipes_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shifter_tb.sv
+    Info (12023): Found entity 1: shifter_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/shifter_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shifterright_tb.sv
+    Info (12023): Found entity 1: shifterRight_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/shifterRight_tb.sv Line: 1
+Warning (10229): Verilog HDL Expression warning at collision_tb.sv(24): truncated literal to match 16 bits File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/collision_tb.sv Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file collision_tb.sv
+    Info (12023): Found entity 1: collision_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/collision_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file scorelights_tb.sv
+    Info (12023): Found entity 1: scoreLights_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flappybird_tb.sv
+    Info (12023): Found entity 1: FlappyBird_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pipegclk.sv
+    Info (12023): Found entity 1: pipeGclk File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pipeGclk.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file frownyface.sv
+    Info (12023): Found entity 1: frownyFace File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/frownyFace.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file outputmux.sv
+    Info (12023): Found entity 1: outputMux File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/outputMux.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pipegclk_tb.sv
+    Info (12023): Found entity 1: pipeGclk_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pipeGclk_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file frownyface_tb.sv
+    Info (12023): Found entity 1: frownyFace_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/frownyFace_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file outputmux_tb.sv
+    Info (12023): Found entity 1: outputMux_tb File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/outputMux_tb.sv Line: 1
 Info (12127): Elaborating entity "DE1_SoC" for the top level hierarchy
-Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:divider" File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/DE1_SoC.sv Line: 24
-Info (12128): Elaborating entity "LEDDriver" for hierarchy "LEDDriver:Driver" File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/DE1_SoC.sv Line: 42
-Info (12128): Elaborating entity "LED_test" for hierarchy "LED_test:test" File: C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/DE1_SoC.sv Line: 50
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:divider" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/DE1_SoC.sv Line: 19
+Info (12128): Elaborating entity "LEDDriver" for hierarchy "LEDDriver:Driver" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/DE1_SoC.sv Line: 37
+Info (12128): Elaborating entity "FlappyBird" for hierarchy "FlappyBird:game" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/DE1_SoC.sv Line: 47
+Info (12128): Elaborating entity "gravity" for hierarchy "FlappyBird:game|gravity:grav" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 20
+Warning (10230): Verilog HDL assignment warning at gravity.sv(18): truncated value with size 32 to match size of target (9) File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/gravity.sv Line: 18
+Warning (10230): Verilog HDL assignment warning at gravity.sv(22): truncated value with size 32 to match size of target (9) File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/gravity.sv Line: 22
+Info (12128): Elaborating entity "pipeClk" for hierarchy "FlappyBird:game|pipeClk:pSynch" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at pipeClk.sv(18): truncated value with size 32 to match size of target (9) File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pipeClk.sv Line: 18
+Warning (10230): Verilog HDL assignment warning at pipeClk.sv(22): truncated value with size 32 to match size of target (9) File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pipeClk.sv Line: 22
+Info (12128): Elaborating entity "pipeGclk" for hierarchy "FlappyBird:game|pipeGclk:pgen" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at pipeGclk.sv(18): truncated value with size 32 to match size of target (12) File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pipeGclk.sv Line: 18
+Warning (10230): Verilog HDL assignment warning at pipeGclk.sv(22): truncated value with size 32 to match size of target (12) File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/pipeGclk.sv Line: 22
+Info (12128): Elaborating entity "keyIn" for hierarchy "FlappyBird:game|keyIn:in" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 23
+Info (12128): Elaborating entity "synch" for hierarchy "FlappyBird:game|keyIn:in|synch:s" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/input.sv Line: 8
+Info (12128): Elaborating entity "pulse" for hierarchy "FlappyBird:game|keyIn:in|pulse:p" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/input.sv Line: 9
+Info (12128): Elaborating entity "bird" for hierarchy "FlappyBird:game|bird:flapper" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 24
+Info (12128): Elaborating entity "randLFSR" for hierarchy "FlappyBird:game|randLFSR:newHole" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 25
+Info (12128): Elaborating entity "pipeGen" for hierarchy "FlappyBird:game|pipeGen:generator" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 26
+Info (12128): Elaborating entity "allPipes" for hierarchy "FlappyBird:game|allPipes:obstacle" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 27
+Info (12128): Elaborating entity "shifterRight" for hierarchy "FlappyBird:game|allPipes:obstacle|shifterRight:s0" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/allpipes.sv Line: 14
+Info (12128): Elaborating entity "shifter" for hierarchy "FlappyBird:game|allPipes:obstacle|shifter:s1" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/allpipes.sv Line: 15
+Info (12128): Elaborating entity "frownyFace" for hierarchy "FlappyBird:game|frownyFace:lost" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 28
+Info (12128): Elaborating entity "outputMux" for hierarchy "FlappyBird:game|outputMux:out" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 29
+Info (12128): Elaborating entity "collision" for hierarchy "FlappyBird:game|collision:winOrLose" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 30
+Warning (10230): Verilog HDL assignment warning at collision.sv(26): truncated value with size 32 to match size of target (10) File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/collision.sv Line: 26
+Info (12128): Elaborating entity "scoreLights" for hierarchy "FlappyBird:game|scoreLights:lights" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/FlappyBird.sv Line: 31
+Warning (10230): Verilog HDL assignment warning at scoreLights.sv(12): truncated value with size 32 to match size of target (4) File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 12
+Warning (10230): Verilog HDL assignment warning at scoreLights.sv(13): truncated value with size 32 to match size of target (4) File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 13
+Warning (10230): Verilog HDL assignment warning at scoreLights.sv(14): truncated value with size 32 to match size of target (4) File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 14
+Info (278001): Inferred 5 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "FlappyBird:game|scoreLights:lights|Mod0" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 12
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "FlappyBird:game|scoreLights:lights|Div0" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 13
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "FlappyBird:game|scoreLights:lights|Mod1" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 13
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "FlappyBird:game|scoreLights:lights|Div1" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 14
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "FlappyBird:game|scoreLights:lights|Mod2" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 14
+Info (12130): Elaborated megafunction instantiation "FlappyBird:game|scoreLights:lights|lpm_divide:Mod0" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 12
+Info (12133): Instantiated megafunction "FlappyBird:game|scoreLights:lights|lpm_divide:Mod0" with the following parameter: File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 12
+    Info (12134): Parameter "LPM_WIDTHN" = "10"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_h3m.tdf
+    Info (12023): Found entity 1: lpm_divide_h3m File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/lpm_divide_h3m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_klh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_klh File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/sign_div_unsign_klh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_eve.tdf
+    Info (12023): Found entity 1: alt_u_div_eve File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/alt_u_div_eve.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "FlappyBird:game|scoreLights:lights|lpm_divide:Div0" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 13
+Info (12133): Instantiated megafunction "FlappyBird:game|scoreLights:lights|lpm_divide:Div0" with the following parameter: File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 13
+    Info (12134): Parameter "LPM_WIDTHN" = "10"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ebm.tdf
+    Info (12023): Found entity 1: lpm_divide_ebm File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/lpm_divide_ebm.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "FlappyBird:game|scoreLights:lights|lpm_divide:Div1" File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 14
+Info (12133): Instantiated megafunction "FlappyBird:game|scoreLights:lights|lpm_divide:Div1" with the following parameter: File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/scoreLights.sv Line: 14
+    Info (12134): Parameter "LPM_WIDTHN" = "10"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_hbm.tdf
+    Info (12023): Found entity 1: lpm_divide_hbm File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/lpm_divide_hbm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_nlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_nlh File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/sign_div_unsign_nlh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kve.tdf
+    Info (12023): Found entity 1: alt_u_div_kve File: C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/db/alt_u_div_kve.tdf Line: 23
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 17 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/output_files/DE1_SoC.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/output_files/DE1_SoC.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 139 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1030 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 88 output pins
-    Info (21061): Implemented 36 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4828 megabytes
-    Info: Processing ended: Wed Nov 27 13:57:22 2024
+    Info (21061): Implemented 927 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4890 megabytes
+    Info: Processing ended: Sat Dec 07 08:08:49 2024
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Aadit/Downloads/Lab1_files_Q17 (8)/output_files/DE1_SoC.map.smsg.
+The suppressed messages can be found in C:/Users/Aadit/GitHub/Projects/FPGA/Flappy Bird/output_files/DE1_SoC.map.smsg.
 
 

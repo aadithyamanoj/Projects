@@ -1,0 +1,27 @@
+module collision(
+input logic clk, reset,
+input logic [15:0] bird, pipe
+output logic [10:0] score,
+output logic gameover
+
+);
+
+
+
+always_ff @(posedge clk) begin
+	if(reset) begin
+		score <= 11'b0;
+		gameover <= 0;
+	end
+	
+	else if(bird & pipe != 16'd0) begin
+		gameover<=1;
+	end
+	
+	else if(gameover == 0) begin
+		score <= score + 1;
+	end
+
+end
+
+endmodule 

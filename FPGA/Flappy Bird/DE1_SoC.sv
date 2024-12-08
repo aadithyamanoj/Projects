@@ -8,12 +8,7 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, SW, LEDR, GPIO_1, CLOCK
     input logic CLOCK_50;
 
 	 // Turn off HEX displays
-    assign HEX0 = '1;
-    assign HEX1 = '1;
-    assign HEX2 = '1;
-    assign HEX3 = '1;
-    assign HEX4 = '1;
-    assign HEX5 = '1;
+
 	 
 	 
 	 /* Set up system base clock to 1526 Hz (50 MHz / 2**(14+1))
@@ -47,6 +42,12 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, SW, LEDR, GPIO_1, CLOCK
 		 
 	 	 KEY0      : Reset
 		 =================================================================== */
-	 LED_test test (.RST(~KEY[0]), .RedPixels, .GrnPixels);
+//LED_test test (.RST(~KEY[0]), .RedPixels, .GrnPixels);
+
+FlappyBird game(.clk(SYSTEM_CLOCK), .reset(~KEY[0]), .HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5, .LEDR, .player(~KEY[3]), .SW, .RedPixels, .GrnPixels);
+	
+	
+
+	 
 	 
 endmodule

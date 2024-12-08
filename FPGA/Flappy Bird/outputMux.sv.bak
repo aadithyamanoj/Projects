@@ -1,0 +1,18 @@
+module outputMux(
+
+
+    input  logic a,  
+    input  logic b,         
+    input  logic sel,       
+    output logic [15:0][15:0] GrnPixels         
+);
+
+    always_comb begin
+        if (sel) begin
+            y = b;          
+        end else begin
+            y = a;          
+        end
+    end
+
+endmodule

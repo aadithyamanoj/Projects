@@ -1,0 +1,28 @@
+module allPipes(
+input clk, clkP, reset,
+input [15:0] newPipe
+
+ouput[15:0][15:0] pipefeild
+
+)
+
+
+
+always_ff @(posedge clk) begin 
+	if(reset) begin 
+		pipeFeild[0]<=16'd0;
+	end
+
+end
+
+always_ff @(posedge clkP) begin 
+	pipeField[0] <= newPipe;0
+
+end
+
+
+shifter s0(.clk(clk), .reset(reset), );
+
+
+
+endmodule 

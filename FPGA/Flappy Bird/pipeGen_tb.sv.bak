@@ -1,0 +1,56 @@
+module pipeGen_tb();
+
+input logic clk, reset,
+input logic [3:0] hole,
+output logic [15:0] pipe 
+
+
+pipeGen dut(.*);
+
+initial begin 
+
+
+
+
+
+
+
+
+
+
+
+
+
+$stop
+
+
+
+
+
+
+
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+endmodule 
