@@ -11,6 +11,7 @@ output logic [15:0][15:0] pipefield
 
 
 
+
 shifterRight s0(.clkM, .clk(clk), .reset(reset), .clkP(clkP), .gameover(gameover),.pipeRight(16'd0), .pipeLeft(pipefield[1]), .newPipe(newPipe), .curCol(pipefield[0]));
 shifter s1(.clkM,.clk(clk), .reset(reset),.gameover(gameover), .pipeRight(pipefield[0]), .pipeLeft(pipefield[2]), .curCol(pipefield[1]));
 shifter s2(.clkM,.clk(clk), .reset(reset),.gameover(gameover), .pipeRight(pipefield[1]), .pipeLeft(pipefield[3]), .curCol(pipefield[2]));
